@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "survey-pdf": "^1.12.16-patch.1"
+  }
+}
