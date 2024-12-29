@@ -8,9 +8,9 @@ const json_simple = {
             "type": "radiogroup",
             "name": "question1",
             "choices": [
-              "Item 1",
-              "Item 2",
-              "Item 3"
+              "Item1-01",
+              "Item2-02",
+              "Item3-03"
             ]
           },
           {
@@ -21,9 +21,9 @@ const json_simple = {
             "type": "checkbox",
             "name": "question3",
             "choices": [
-              "Item 1",
-              "Item 2",
-              "Item 3"
+              "Item1-05",
+              "Item2-08",
+              "Item3-07"
             ]
           },
           {
