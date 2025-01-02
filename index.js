@@ -185,6 +185,92 @@ const calculateScore = function(surveyData, surveyJson) {
                 });
                 break;
 
+            case "multipletext":
+                let multipleTextScore = 0;
+                let multipleTextAnswer = '';
+
+                // Handle each item within the multipletext question
+                questionElement.items.forEach(item => {
+                    const itemAnswer = response[item.name];
+                    multipleTextAnswer += `${item.title}: ${itemAnswer || 'No answer'}\n`;
+
+                    // Assuming a scoring rule of 1 per valid answer
+                    if (itemAnswer) {
+                        multipleTextScore += 1;
+                    }
+                });
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: multipleTextAnswer.trim(),
+                    score: multipleTextScore
+                });
+
+                totalScore += multipleTextScore;
+                break;
+
+            case "matrix":
+                let matrixScore = 0;
+                let matrixAnswer = '';
+
+                // Iterate through rows and columns
+                Object.keys(response).forEach(row => {
+                    const column = response[row];
+                    matrixAnswer += `${row}: ${column || 'No answer'}\n`;
+
+                    // Assuming score is based on the column's position (you can customize this logic)
+                    const columnIndex = questionElement.columns.indexOf(column);
+                    if (columnIndex !== -1) {
+                        matrixScore += columnIndex + 1;  // You can adjust the scoring logic here
+                    }
+                });
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: matrixAnswer.trim(),
+                    score: matrixScore
+                });
+
+                totalScore += matrixScore;
+                break;
+
+            case "matrixdropdown":
+                let matrixDropdownScore = 0;
+                let matrixDropdownAnswer = '';
+
+                // Iterate through rows and columns
+                Object.keys(response).forEach(row => {
+                    const columnResponses = response[row];
+                    matrixDropdownAnswer += `${row}:\n`;
+
+                    Object.keys(columnResponses).forEach(column => {
+                        const columnValue = columnResponses[column];
+                        matrixDropdownAnswer += `  ${column}: ${columnValue || 'No answer'}\n`;
+
+                        // Get the weight of the chosen value
+                        const choice = questionElement.choices.find(choice => choice.value === columnValue);
+                        if (choice) {
+                            matrixDropdownScore += choice.weight;
+                        }
+                    });
+                });
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: matrixDropdownAnswer.trim(),
+                    score: matrixDropdownScore
+                });
+
+                totalScore += matrixDropdownScore;
+                break;
+    
+
             default:
                 console.warn(`Unknown question type: ${questionElement.type}`);
                 break;
@@ -194,33 +280,6 @@ const calculateScore = function(surveyData, surveyJson) {
     return { totalScore, questionDetails };
 };
 
-
-// const savePdf = function(surveyData) {
-//     const { jsPDF } = window.jspdf;
-//     const surveyPdf = new jsPDF();
-//     surveyPdf.text("Survey Results", 20, 20);
-  
-//     let yPosition = 30;
-//     // Loop through question details and add them to the PDF
-//     surveyData.questionDetails.forEach((question) => {
-//         // Add the question title, answer, and score to the PDF
-//         surveyPdf.text(`${question.name}: ${question.title}`, 20, yPosition);
-//         yPosition += 10;
-//         surveyPdf.text(`Type: ${question.type}`, 20, yPosition);
-//         yPosition += 10;
-//         `${question.name}: ${question.title}`
-//         yPosition += 10;
-//         surveyPdf.text(`Score: ${question.score}`, 20, yPosition);
-//         yPosition += 15; // Add extra spacing between questions
-
-//     });
-  
-//     // Add the total score to the PDF
-//     surveyPdf.text(`Total Score: ${surveyData.totalScore}`, 20, yPosition);
-//     yPosition += 10; // Space after the total score
-  
-//     surveyPdf.save("survey_results.pdf");
-//   };
 const savePdf = function(surveyData) {
     const { jsPDF } = window.jspdf;
     const surveyPdf = new jsPDF();
@@ -229,47 +288,76 @@ const savePdf = function(surveyData) {
     let yPosition = 30;
     const margin = 20; // Left margin
     const lineHeight = 10; // Vertical spacing between lines
-    const maxYPosition = 270; // Max Y position for content (approaching bottom of page)
+    const maxYPosition = 250; // Max Y position for content (approaching bottom of page)
   
     // Loop through question details and add them to the PDF
     surveyData.questionDetails.forEach((question) => {
-      // Check if we need to add a new page (if we exceed the max Y position)
-      if (yPosition + lineHeight > maxYPosition) {
-        surveyPdf.addPage(); // Add a new page
-        yPosition = 20; // Reset Y position for the new page
-      }
-  
-      // Add question and answer to the PDF
-      surveyPdf.text(`${question.name}: ${question.title}`, margin, yPosition);
-      yPosition += lineHeight;
+        // Check if we need to add a new page (if we exceed the max Y position)
+        if (yPosition + lineHeight > maxYPosition) {
+            surveyPdf.addPage(); // Add a new page
+            yPosition = 20; // Reset Y position for the new page
+        }
+    
+        // Add question and answer to the PDF
+        surveyPdf.text(`${question.name}: ${question.title}`, margin, yPosition);
+        yPosition += lineHeight;
 
-      // Add question answer
-      surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition); 
-      yPosition += lineHeight;
 
-      // Add question type 
-      surveyPdf.text(`Type: ${question.type}`, margin, yPosition); 
-      yPosition += lineHeight;
 
-      // Add score
-      surveyPdf.text(`Score: ${question.score}`, margin, yPosition);
-      yPosition += 2*lineHeight;
-    });
-  
-    // Add the total score to the PDF
-    if (surveyData.totalScore !== undefined) {
-      // Check if we need to add a new page before the total score
-      if (yPosition + lineHeight > maxYPosition) {
-        surveyPdf.addPage();
-        yPosition = 20;
-      }
-      surveyPdf.text(`Total Score: ${surveyData.totalScore}`, margin, yPosition);
-    } else {
-      surveyPdf.text("Total Score: 0", margin, yPosition); // If undefined, show as 0
-    }
-  
-    // Save the PDF
-    surveyPdf.save("survey_results.pdf");
+        // Add question type 
+        surveyPdf.text(`Type: ${question.type}`, margin, yPosition); 
+        yPosition += lineHeight;
+
+        // Add score
+        surveyPdf.text(`Score: ${question.score}`, margin, yPosition);
+        yPosition += lineHeight;
+
+        // Add question answer
+            // surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition); 
+            // yPosition += lineHeight;
+
+        // Add the answer(s) with extra padding for multiple answers
+        if (Array.isArray(question.answer)) {
+            question.answer.forEach((answer, index) => {
+            if (yPosition + lineHeight > maxYPosition) {
+                surveyPdf.addPage();
+                yPosition = 20;
+            }
+            surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition);
+            yPosition += lineHeight;
+            });
+        } else {
+            // Add a single answer
+            if (yPosition + lineHeight > maxYPosition) {
+            surveyPdf.addPage();
+            yPosition = 20;
+            }
+            surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition);
+            yPosition += lineHeight;
+        }
+
+        // Add space for next question
+        yPosition += 2*lineHeight;
+
+
+        });
+        
+        // Add space for the final results
+        yPosition += 4*lineHeight;
+        // Add the total score to the PDF
+        if (surveyData.totalScore !== undefined) {
+        // Check if we need to add a new page before the total score
+        if (yPosition + lineHeight > maxYPosition) {
+            surveyPdf.addPage();
+            yPosition = 20;
+        }
+        surveyPdf.text(`Total Score: ${surveyData.totalScore}`, margin, yPosition);
+        } else {
+        surveyPdf.text("Total Score: 0", margin, yPosition); // If undefined, show as 0
+        }
+    
+        // Save the PDF
+        surveyPdf.save("survey_results.pdf");
   };
   
   
