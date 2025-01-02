@@ -1,6 +1,3 @@
-const { jsPDF } = window.jspdf;  // Destructure jsPDF from the global window.jspdf object
-
-// Function to calculate the overall score based on the survey data
 const calculateScore = function(surveyData, surveyJson) {
     let totalScore = 0;
     const questionDetails = [];  // To store question details for the PDF report
@@ -15,124 +12,293 @@ const calculateScore = function(surveyData, surveyJson) {
             return;
         }
 
-        // Check if the question type is "radiogroup" or "checkbox", as these are weighted
-        if (["radiogroup", "checkbox"].includes(questionElement.type)) {
-            let questionScore = 0;
-            let questionAnswer = '';
-            
-            // If the response is an array (multi-response question like checkboxes)
-            if (Array.isArray(response)) {
-                questionAnswer = response.join(', ');
-                response.forEach(answer => {
-                    const weight = answer.split('-')[1];  // Get the part after the dash (the weight)
-                    questionScore += parseInt(weight, 10);   // Add the weight to the total score
+        // Handle different question types using a switch-case
+        switch (questionElement.type) {
+            case "radiogroup":
+            case "checkbox":
+                let questionScore = 0;
+                let questionAnswer = '';
+
+                if (Array.isArray(response)) {
+                    questionAnswer = response.join(', ');
+                    response.forEach(answer => {
+                        const choice = questionElement.choices.find(choice => choice.value === answer);
+                        if (choice) {
+                            questionScore += choice.weight;
+                        }
+                    });
+                } else {
+                    questionAnswer = response;
+                    const choice = questionElement.choices.find(choice => choice.value === response);
+                    if (choice) {
+                        questionScore += choice.weight;
+                    }
+                }
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: questionAnswer,
+                    score: questionScore
                 });
-            } else {
-                // Single response (radio button)
-                questionAnswer = response;
-                const weight = response.split('-')[1];  // Get the part after the dash (the weight)
-                questionScore += parseInt(weight, 10);  // Add the weight to the total score
-            }
 
-            // Store the question details for the PDF
-            questionDetails.push({
-                question: questionElement.title || question, // Use title if available, else use name
-                type: questionElement.type,
-                answer: questionAnswer,
-                score: questionScore
-            });
+                totalScore += questionScore;
+                break;
 
-            totalScore += questionScore; // Add the question score to the total score
+            case "rating":
+                const ratingAnswer = response;
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: ratingAnswer,
+                    score: ratingAnswer
+                });
+                totalScore += ratingAnswer;
+                break;
+
+            case "dropdown":
+                const dropdownAnswer = response;
+                const dropdownChoice = questionElement.choices.find(choice => choice.value === dropdownAnswer);
+                if (dropdownChoice) {
+                    totalScore += dropdownChoice.weight;
+                    questionDetails.push({
+                        name: question,
+                        title: questionElement.title,
+                        type: questionElement.type,
+                        answer: dropdownAnswer,
+                        score: dropdownChoice.weight
+                    });
+                }
+                break;
+
+            case "tagbox":
+                let tagboxScore = 0;
+                let tagboxAnswer = '';
+                // Handle multiple selections for dropdown
+                if (Array.isArray(response)) {
+                    tagboxAnswer = response.join(', ');
+                    response.forEach(answer => {
+                        const tagboxChoice = questionElement.choices.find(choice => choice.value === answer);
+                        if (tagboxChoice) {
+                            tagboxScore += tagboxChoice.weight;
+                        }
+                    });
+                } else {
+                    // For single selection
+                    const tagboxChoice = questionElement.choices.find(choice => choice.value === response);
+                    if (tagboxChoice) {
+                        tagboxScore = tagboxChoice.weight;
+                        tagboxAnswer = response;
+                    }
+                }
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: tagboxAnswer,
+                    score: tagboxScore
+                });
+                totalScore += tagboxScore;
+                break;
+
+            case "boolean":
+                let booleanScore = 0;
+                let booleanAnswer = '';
+                if (response === true) {
+                    booleanScore = 1;  // or any value based on your scoring rules
+                    booleanAnswer = "Yes";
+                } else if (response === false) {
+                    booleanScore = 0;  // or any value based on your scoring rules
+                    booleanAnswer = "No";
+                }
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: booleanAnswer,
+                    score: booleanScore
+                });
+
+                totalScore += booleanScore;
+                break;
+
+            case "imagepicker":
+                let imageScore = 0;
+                let imageAnswer = '';
+                // Handle image picker response
+                const imageChoice = questionElement.choices.find(choice => choice.value === response);
+                if (imageChoice) {
+                    imageScore = imageChoice.weight;
+                    imageAnswer = response;
+                }
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: imageAnswer,
+                    score: imageScore
+                });
+
+                totalScore += imageScore;
+                break;
+
+            case "ranking":
+                let rankingScore = 0;
+                let rankingAnswer = '';
+                // Handle ranking response
+                if (Array.isArray(response)) {
+                    rankingAnswer = response.join(', ');
+                    response.forEach((item, index) => {
+                        const rankingChoice = questionElement.choices.find(choice => choice.value === item);
+                        if (rankingChoice) {
+                            // You could assign the weight based on position or choice, e.g. index + 1
+                            rankingScore += rankingChoice.weight * (index + 1);  // Modify as needed based on your scoring rules
+                        }
+                    });
+                }
+
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: rankingAnswer,
+                    score: rankingScore
+                });
+
+                totalScore += rankingScore;
+                break;
+
+            case "text":
+            case "comment":
+                const textAnswer = response;
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: textAnswer,
+                    score: 0
+                });
+                break;
+
+            default:
+                console.warn(`Unknown question type: ${questionElement.type}`);
+                break;
         }
     });
 
     return { totalScore, questionDetails };
 };
 
-// Function to generate and download the PDF with the score
-const savePdf = function(surveyData, surveyJson) {
-    if (!surveyData) {
-        console.error("No survey data available to generate PDF");
-        return;
-    }
 
-    // Calculate the score and gather question details
-    const { totalScore, questionDetails } = calculateScore(surveyData, surveyJson);
+// const savePdf = function(surveyData) {
+//     const { jsPDF } = window.jspdf;
+//     const surveyPdf = new jsPDF();
+//     surveyPdf.text("Survey Results", 20, 20);
+  
+//     let yPosition = 30;
+//     // Loop through question details and add them to the PDF
+//     surveyData.questionDetails.forEach((question) => {
+//         // Add the question title, answer, and score to the PDF
+//         surveyPdf.text(`${question.name}: ${question.title}`, 20, yPosition);
+//         yPosition += 10;
+//         surveyPdf.text(`Type: ${question.type}`, 20, yPosition);
+//         yPosition += 10;
+//         `${question.name}: ${question.title}`
+//         yPosition += 10;
+//         surveyPdf.text(`Score: ${question.score}`, 20, yPosition);
+//         yPosition += 15; // Add extra spacing between questions
 
-    // Initialize jsPDF
-    const doc = new jsPDF();
-
-    // Add a title to the PDF
-    doc.setFontSize(16);
-    doc.text("Survey Results and Impact Assessment", 10, 10);
-
-    // Set initial position for question details
+//     });
+  
+//     // Add the total score to the PDF
+//     surveyPdf.text(`Total Score: ${surveyData.totalScore}`, 20, yPosition);
+//     yPosition += 10; // Space after the total score
+  
+//     surveyPdf.save("survey_results.pdf");
+//   };
+const savePdf = function(surveyData) {
+    const { jsPDF } = window.jspdf;
+    const surveyPdf = new jsPDF();
+    surveyPdf.text("Survey Results", 20, 20);
+  
     let yPosition = 30;
+    const margin = 20; // Left margin
+    const lineHeight = 10; // Vertical spacing between lines
+    const maxYPosition = 270; // Max Y position for content (approaching bottom of page)
+  
+    // Loop through question details and add them to the PDF
+    surveyData.questionDetails.forEach((question) => {
+      // Check if we need to add a new page (if we exceed the max Y position)
+      if (yPosition + lineHeight > maxYPosition) {
+        surveyPdf.addPage(); // Add a new page
+        yPosition = 20; // Reset Y position for the new page
+      }
+  
+      // Add question and answer to the PDF
+      surveyPdf.text(`${question.name}: ${question.title}`, margin, yPosition);
+      yPosition += lineHeight;
 
-    // Function to handle adding content to the PDF with automatic line breaks
-    const addTextWithLineBreaks = (text, yPosition) => {
-        const margin = 10; // Margin for the text
-        const maxWidth = 180; // Maximum width for the text (in points)
-        const lines = doc.splitTextToSize(text, maxWidth);
-        doc.text(lines, margin, yPosition);
-        return yPosition + lines.length * 10;  // Move yPosition down by the number of lines
-    };
+      // Add question answer
+      surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition); 
+      yPosition += lineHeight;
 
-    // Add survey data to the PDF (as a JSON string)
-    doc.setFontSize(12);
-    const surveyText = JSON.stringify(surveyData, null, 3);  // Format the survey data as a string
-    yPosition = addTextWithLineBreaks(surveyText, yPosition);
+      // Add question type 
+      surveyPdf.text(`Type: ${question.type}`, margin, yPosition); 
+      yPosition += lineHeight;
 
-    // Add the detailed breakdown of the questions and their scores
-    questionDetails.forEach((detail) => {
-        yPosition = addTextWithLineBreaks(`Question: ${detail.question}`, yPosition);
-        yPosition = addTextWithLineBreaks(`Type: ${detail.type}`, yPosition);
-        yPosition = addTextWithLineBreaks(`Answer: ${detail.answer}`, yPosition);
-        yPosition = addTextWithLineBreaks(`Score: ${detail.score}`, yPosition);
-
-        // Check if the current content exceeds the page, and if so, add a new page
-        if (yPosition > 250) {
-            doc.addPage();
-            yPosition = 20; // Reset yPosition for the new page
-        }
+      // Add score
+      surveyPdf.text(`Score: ${question.score}`, margin, yPosition);
+      yPosition += 2*lineHeight;
     });
-
-    // Add the calculated total score to the PDF
-    yPosition = addTextWithLineBreaks(`Total Impact Score: ${totalScore}`, yPosition);
-
-    // Save the PDF with a filename
-    doc.save("results.pdf");
-};
-
-// Survey Component using SurveyJS
+  
+    // Add the total score to the PDF
+    if (surveyData.totalScore !== undefined) {
+      // Check if we need to add a new page before the total score
+      if (yPosition + lineHeight > maxYPosition) {
+        surveyPdf.addPage();
+        yPosition = 20;
+      }
+      surveyPdf.text(`Total Score: ${surveyData.totalScore}`, margin, yPosition);
+    } else {
+      surveyPdf.text("Total Score: 0", margin, yPosition); // If undefined, show as 0
+    }
+  
+    // Save the PDF
+    surveyPdf.save("survey_results.pdf");
+  };
+  
+  
 function SurveyComponent() {
-    const [surveyData, setSurveyData] = React.useState(null);  // State to hold the survey data
+  const survey = new Survey.Model(json_simple);
+  const [surveyData, setSurveyData] = React.useState(null); // Set to null initially
 
-    const survey = new Survey.Model(json_simple);  // Assuming `json_simple` is your survey JSON
+  survey.onComplete.add((sender, options) => {
+    const { totalScore, questionDetails } = calculateScore(sender.data, json_simple);
+    setSurveyData({ totalScore, questionDetails }); // Set both total score and question details
+  });
 
-    // Listen for when the survey is complete
-    survey.onComplete.add((sender, options) => {
-        console.log("Survey Completed. Survey Data: ", sender.data);
-        setSurveyData(sender.data);  // Store the data in the state variable
-    });
+  const handleSavePdf = () => {
+    if (surveyData) {
+      savePdf(surveyData);  // Pass the whole surveyData to savePdf
+    }
+  };
 
-    // Add a custom navigation item to trigger PDF generation
-    survey.addNavigationItem({
-        id: "pdf-export",
-        title: "Save as PDF",
-        action: () => {
-            if (surveyData) {
-                console.log("Saving survey data as PDF...");
-                savePdf(surveyData, json_simple);  // Pass the survey data and JSON structure to the savePdf function
-            } else {
-                console.error("Survey data is not available yet.");
-            }
-        }
-    });
-
-    return <SurveyReact.Survey model={survey} />;
+  return (
+    <>
+      <SurveyReact.Survey model={survey} />
+      {surveyData && (
+        <div id="savePdfButtonContainer">
+        <button onClick={handleSavePdf} id="savePdfButton">Save as PDF</button>
+        </div>
+      )}
+    </>
+  );
 }
 
-// Render the Survey Component to the DOM
 const root = ReactDOM.createRoot(document.getElementById("surveyElement"));
 root.render(<SurveyComponent />);
