@@ -1,5 +1,6 @@
 const calculateScore = function(surveyData, surveyJson) {
-    let totalScore = 0;
+    let score1 = 0;
+    let score2 = 0;
     const questionDetails = [];  // To store question details for the PDF report
 
     // Iterate through the survey data responses
@@ -12,264 +13,288 @@ const calculateScore = function(surveyData, surveyJson) {
             return;
         }
 
+        let questionScore1 = 0;
+        let questionScore2 = 0;
+        let questionAnswer = '';
+
         // Handle different question types using a switch-case
         switch (questionElement.type) {
             case "radiogroup":
             case "checkbox":
-                let questionScore = 0;
-                let questionAnswer = '';
-
                 if (Array.isArray(response)) {
                     questionAnswer = response.join(', ');
                     response.forEach(answer => {
                         const choice = questionElement.choices.find(choice => choice.value === answer);
                         if (choice) {
-                            questionScore += choice.weight;
+                            questionScore1 += choice.weight1;
+                            questionScore2 += choice.weight2;
                         }
                     });
                 } else {
                     questionAnswer = response;
                     const choice = questionElement.choices.find(choice => choice.value === response);
                     if (choice) {
-                        questionScore += choice.weight;
+                        questionScore1 += choice.weight1;
+                        questionScore2 += choice.weight2;
                     }
                 }
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
+                });
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
+
+                break;
+
+            case "rating":
+                const ratingAnswer = response;
+                questionScore1 = ratingAnswer;
+                questionScore2 = ratingAnswer;  // If needed, adjust scoring
+                questionAnswer = ratingAnswer;
 
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
                     answer: questionAnswer,
-                    score: questionScore
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
 
-                totalScore += questionScore;
-                break;
-
-            case "rating":
-                const ratingAnswer = response;
-                questionDetails.push({
-                    name: question,
-                    title: questionElement.title,
-                    type: questionElement.type,
-                    answer: ratingAnswer,
-                    score: ratingAnswer
-                });
-                totalScore += ratingAnswer;
                 break;
 
             case "dropdown":
-                const dropdownAnswer = response;
-                const dropdownChoice = questionElement.choices.find(choice => choice.value === dropdownAnswer);
+                const dropdownChoice = questionElement.choices.find(choice => choice.value === response);
                 if (dropdownChoice) {
-                    totalScore += dropdownChoice.weight;
-                    questionDetails.push({
-                        name: question,
-                        title: questionElement.title,
-                        type: questionElement.type,
-                        answer: dropdownAnswer,
-                        score: dropdownChoice.weight
-                    });
+                    questionScore1 = dropdownChoice.weight1;
+                    questionScore2 = dropdownChoice.weight2;
+                    questionAnswer = response;
                 }
+                questionDetails.push({
+                    name: question,
+                    title: questionElement.title,
+                    type: questionElement.type,
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
+                });
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
+
                 break;
 
             case "tagbox":
-                let tagboxScore = 0;
-                let tagboxAnswer = '';
-                // Handle multiple selections for dropdown
                 if (Array.isArray(response)) {
-                    tagboxAnswer = response.join(', ');
+                    questionAnswer = response.join(', ');
                     response.forEach(answer => {
                         const tagboxChoice = questionElement.choices.find(choice => choice.value === answer);
                         if (tagboxChoice) {
-                            tagboxScore += tagboxChoice.weight;
+                            questionScore1 += tagboxChoice.weight1;
+                            questionScore2 += tagboxChoice.weight2;
                         }
                     });
                 } else {
-                    // For single selection
                     const tagboxChoice = questionElement.choices.find(choice => choice.value === response);
                     if (tagboxChoice) {
-                        tagboxScore = tagboxChoice.weight;
-                        tagboxAnswer = response;
+                        questionScore1 = tagboxChoice.weight1;
+                        questionScore2 = tagboxChoice.weight2;
+                        questionAnswer = response;
                     }
                 }
-
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: tagboxAnswer,
-                    score: tagboxScore
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-                totalScore += tagboxScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "boolean":
-                let booleanScore = 0;
-                let booleanAnswer = '';
                 if (response === true) {
-                    booleanScore = 1;  // or any value based on your scoring rules
-                    booleanAnswer = "Yes";
+                    questionScore1 = 1;
+                    questionScore2 = 2; // You can adjust these values as per your needs
+                    questionAnswer = "Yes";
                 } else if (response === false) {
-                    booleanScore = 0;  // or any value based on your scoring rules
-                    booleanAnswer = "No";
+                    questionScore1 = 0;
+                    questionScore2 = 0;
+                    questionAnswer = "No";
                 }
-
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: booleanAnswer,
-                    score: booleanScore
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-
-                totalScore += booleanScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "imagepicker":
-                let imageScore = 0;
-                let imageAnswer = '';
-                // Handle image picker response
                 const imageChoice = questionElement.choices.find(choice => choice.value === response);
                 if (imageChoice) {
-                    imageScore = imageChoice.weight;
-                    imageAnswer = response;
+                    questionScore1 = imageChoice.weight1;
+                    questionScore2 = imageChoice.weight2;
+                    questionAnswer = response;
                 }
-
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: imageAnswer,
-                    score: imageScore
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-
-                totalScore += imageScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "ranking":
-                let rankingScore = 0;
-                let rankingAnswer = '';
-                // Handle ranking response
                 if (Array.isArray(response)) {
-                    rankingAnswer = response.join(', ');
+                    questionAnswer = response.join(', ');
                     response.forEach((item, index) => {
                         const rankingChoice = questionElement.choices.find(choice => choice.value === item);
                         if (rankingChoice) {
-                            // You could assign the weight based on position or choice, e.g. index + 1
-                            rankingScore += rankingChoice.weight * (index + 1);  // Modify as needed based on your scoring rules
+                            questionScore1 += rankingChoice.weight1 * (index + 1);
+                            questionScore2 += rankingChoice.weight2 * (index + 1);
                         }
                     });
                 }
-
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: rankingAnswer,
-                    score: rankingScore
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-
-                totalScore += rankingScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "text":
             case "comment":
-                const textAnswer = response;
+                questionAnswer = response;
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: textAnswer,
-                    score: 0
+                    answer: questionAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "multipletext":
-                let multipleTextScore = 0;
+                let multipleTextScore1 = 0;
+                let multipleTextScore2 = 0;
                 let multipleTextAnswer = '';
 
-                // Handle each item within the multipletext question
                 questionElement.items.forEach(item => {
                     const itemAnswer = response[item.name];
                     multipleTextAnswer += `${item.title}: ${itemAnswer || 'No answer'}\n`;
 
-                    // Assuming a scoring rule of 1 per valid answer
                     if (itemAnswer) {
-                        multipleTextScore += 1;
+                        multipleTextScore1 += 1;
+                        multipleTextScore2 += 1; // Adjust as per your rules
                     }
                 });
-
+                questionScore1 = multipleTextScore1;
+                questionScore2 = multipleTextScore2;
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: multipleTextAnswer.trim(),
-                    score: multipleTextScore
+                    answer: multipleTextAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-
-                totalScore += multipleTextScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "matrix":
-                let matrixScore = 0;
+                let matrixScore1 = 0;
+                let matrixScore2 = 0;
                 let matrixAnswer = '';
-
-                // Iterate through rows and columns
                 Object.keys(response).forEach(row => {
                     const column = response[row];
                     matrixAnswer += `${row}: ${column || 'No answer'}\n`;
-
-                    // Assuming score is based on the column's position (you can customize this logic)
                     const columnIndex = questionElement.columns.indexOf(column);
                     if (columnIndex !== -1) {
-                        matrixScore += columnIndex + 1;  // You can adjust the scoring logic here
+                        matrixScore1 += columnIndex + 1;  // Customize scoring
+                        matrixScore2 += columnIndex + 1;
                     }
                 });
-
+                questionScore1 = matrixScore1;
+                questionScore2 = matrixScore2;
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: matrixAnswer.trim(),
-                    score: matrixScore
+                    answer: matrixAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-
-                totalScore += matrixScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
 
             case "matrixdropdown":
-                let matrixDropdownScore = 0;
-                let matrixDropdownAnswer = '';
-
-                // Iterate through rows and columns
+                let matrixDropdownScore1 = 0;
+                let matrixDropdownScore2 = 0;
+                let matrixDropdownAnswer = ''
                 Object.keys(response).forEach(row => {
                     const columnResponses = response[row];
                     matrixDropdownAnswer += `${row}:\n`;
-
                     Object.keys(columnResponses).forEach(column => {
                         const columnValue = columnResponses[column];
                         matrixDropdownAnswer += `  ${column}: ${columnValue || 'No answer'}\n`;
-
-                        // Get the weight of the chosen value
                         const choice = questionElement.choices.find(choice => choice.value === columnValue);
                         if (choice) {
-                            matrixDropdownScore += choice.weight;
+                            matrixDropdownScore1 += choice.weight1;
+                            matrixDropdownScore2 += choice.weight2;
                         }
                     });
                 });
-
+                questionScore1 = matrixDropdownScore1;
+                questionScore2 = matrixDropdownScore2;
                 questionDetails.push({
                     name: question,
                     title: questionElement.title,
                     type: questionElement.type,
-                    answer: matrixDropdownAnswer.trim(),
-                    score: matrixDropdownScore
+                    answer: matrixDropdownAnswer,
+                    score1: questionScore1,
+                    score2: questionScore2
                 });
-
-                totalScore += matrixDropdownScore;
+        
+                score1 += questionScore1;
+                score2 += questionScore2;
                 break;
-    
 
             default:
                 console.warn(`Unknown question type: ${questionElement.type}`);
@@ -277,116 +302,176 @@ const calculateScore = function(surveyData, surveyJson) {
         }
     });
 
-    return { totalScore, questionDetails };
+    return { score1, score2, totalScore: score1 + score2, questionDetails };
 };
 
 const savePdf = function(surveyData) {
     const { jsPDF } = window.jspdf;
     const surveyPdf = new jsPDF();
     surveyPdf.text("Survey Results", 20, 20);
-  
+
     let yPosition = 30;
-    const margin = 20; // Left margin
-    const lineHeight = 10; // Vertical spacing between lines
-    const maxYPosition = 250; // Max Y position for content (approaching bottom of page)
-  
-    // Loop through question details and add them to the PDF
+    const margin = 20;
+    const lineHeight = 10;
+    const maxYPosition = 250;
+
     surveyData.questionDetails.forEach((question) => {
-        // Check if we need to add a new page (if we exceed the max Y position)
         if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage(); // Add a new page
-            yPosition = 20; // Reset Y position for the new page
+            surveyPdf.addPage();
+            yPosition = 20;
         }
-    
-        // Add question and answer to the PDF
+
         surveyPdf.text(`${question.name}: ${question.title}`, margin, yPosition);
         yPosition += lineHeight;
-
-
-
-        // Add question type 
-        surveyPdf.text(`Type: ${question.type}`, margin, yPosition); 
+        surveyPdf.text(`Type: ${question.type}`, margin, yPosition);
+        yPosition += lineHeight;
+        surveyPdf.text(`Score1: ${question.score1}`, margin, yPosition);
+        yPosition += lineHeight;
+        surveyPdf.text(`Score2: ${question.score2}`, margin, yPosition);
         yPosition += lineHeight;
 
-        // Add score
-        surveyPdf.text(`Score: ${question.score}`, margin, yPosition);
-        yPosition += lineHeight;
-
-        // Add question answer
-            // surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition); 
-            // yPosition += lineHeight;
-
-        // Add the answer(s) with extra padding for multiple answers
         if (Array.isArray(question.answer)) {
-            question.answer.forEach((answer, index) => {
+            question.answer.forEach((answer) => {
+                if (yPosition + lineHeight > maxYPosition) {
+                    surveyPdf.addPage();
+                    yPosition = 20;
+                }
+                surveyPdf.text(`Answer: ${answer}`, margin, yPosition);
+                yPosition += lineHeight;
+            });
+        } else {
             if (yPosition + lineHeight > maxYPosition) {
                 surveyPdf.addPage();
                 yPosition = 20;
             }
             surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition);
             yPosition += lineHeight;
-            });
-        } else {
-            // Add a single answer
-            if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-            }
-            surveyPdf.text(`Answer: ${question.answer}`, margin, yPosition);
-            yPosition += lineHeight;
         }
 
-        // Add space for next question
-        yPosition += 2*lineHeight;
+        yPosition += 2 * lineHeight;
+    });
+
+    yPosition += 4 * lineHeight;
+    if (surveyData.score1 !== undefined) {
+        if (yPosition + lineHeight > maxYPosition) {
+            surveyPdf.addPage();
+            yPosition = 20;
+        }
+        surveyPdf.text(`Total Score 1: ${surveyData.score1}`, margin, yPosition);
+    } else {
+        surveyPdf.text("Total Score 1: 0", margin, yPosition);
+    }
 
 
-        });
-        
-        // Add space for the final results
-        yPosition += 4*lineHeight;
-        // Add the total score to the PDF
-        if (surveyData.totalScore !== undefined) {
-        // Check if we need to add a new page before the total score
+    yPosition += 2 * lineHeight;
+    if (surveyData.score2 !== undefined) {
+        if (yPosition + lineHeight > maxYPosition) {
+            surveyPdf.addPage();
+            yPosition = 20;
+        }
+        surveyPdf.text(`Total Score 2: ${surveyData.score2}`, margin, yPosition);
+    } else {
+        surveyPdf.text("Total Score 2: 0", margin, yPosition);
+    }
+
+    yPosition += 2 * lineHeight;
+    if (surveyData.totalScore !== undefined) {
         if (yPosition + lineHeight > maxYPosition) {
             surveyPdf.addPage();
             yPosition = 20;
         }
         surveyPdf.text(`Total Score: ${surveyData.totalScore}`, margin, yPosition);
-        } else {
-        surveyPdf.text("Total Score: 0", margin, yPosition); // If undefined, show as 0
-        }
-    
-        // Save the PDF
-        surveyPdf.save("survey_results.pdf");
-  };
-  
-  
-function SurveyComponent() {
-  const survey = new Survey.Model(json_simple);
-  const [surveyData, setSurveyData] = React.useState(null); // Set to null initially
-
-  survey.onComplete.add((sender, options) => {
-    const { totalScore, questionDetails } = calculateScore(sender.data, json_simple);
-    setSurveyData({ totalScore, questionDetails }); // Set both total score and question details
-  });
-
-  const handleSavePdf = () => {
-    if (surveyData) {
-      savePdf(surveyData);  // Pass the whole surveyData to savePdf
+    } else {
+        surveyPdf.text("Total Score: 0", margin, yPosition);
     }
-  };
 
-  return (
-    <>
-      <SurveyReact.Survey model={survey} />
-      {surveyData && (
-        <div id="savePdfButtonContainer">
-        <button onClick={handleSavePdf} id="savePdfButton">Save as PDF</button>
-        </div>
-      )}
-    </>
-  );
+    surveyPdf.save("survey_results.pdf");
+};
+
+function SurveyComponent() {
+    const survey = new Survey.Model(json_simple);
+    const [surveyData, setSurveyData] = React.useState(null); // Set to null initially
+    const [isSurveyCompleted, setIsSurveyCompleted] = React.useState(false); // Track survey completion
+  
+    survey.onComplete.add((sender, options) => {
+        const { score1, score2, totalScore, questionDetails } = calculateScore(sender.data, json_simple);
+        setSurveyData({ score1, score2, totalScore, questionDetails }); // Set both total score and question details
+        setIsSurveyCompleted(true); // Mark the survey as completed
+    });
+  
+    const handleSavePdf = () => {
+        if (surveyData) {
+            savePdf(surveyData);  // Pass the whole surveyData to savePdf
+        }
+    };
+
+    const handleCloseModal = () => {
+        setIsSurveyCompleted(false); // Close the modal
+    };
+  
+    return (
+      <>
+        <SurveyReact.Survey model={survey} />
+        
+        {isSurveyCompleted && (
+          <div id="savePdfModal" style={modalStyle}>
+            <div style={modalContentStyle}>
+              <h3>Thank you for completing the survey!</h3>
+              <p>Would you like to save your results as a PDF?</p>
+              <button onClick={handleSavePdf} id="savePdfButton" style={savePdfButtonStyle}>Save as PDF</button>
+              <button onClick={handleCloseModal} style={closeButtonStyle}>Close</button>
+            </div>
+          </div>
+        )}
+      </>
+    );
 }
 
+// Styles for the modal pop-up
+const modalStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 9999,
+};
+
+const modalContentStyle = {
+    backgroundColor: "white",
+    padding: "20px",
+    borderRadius: "5px",
+    textAlign: "center",
+    width: "300px",
+};
+
+// Style for the Save as PDF button
+const savePdfButtonStyle = {
+    backgroundColor: "#4CAF50", // Green
+    color: "white",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "5px",
+    cursor: "pointer",
+    marginBottom: "10px",
+};
+
+// Style for the Close button (red background)
+const closeButtonStyle = {
+    backgroundColor: "#f44336", // Red
+    color: "white",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "5px",
+    cursor: "pointer",
+};
+
+
+
+// Rendering the component
 const root = ReactDOM.createRoot(document.getElementById("surveyElement"));
 root.render(<SurveyComponent />);
