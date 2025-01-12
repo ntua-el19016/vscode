@@ -126,12 +126,12 @@ const calculateScore = function(surveyData, surveyJson) {
 
             case "boolean":
                 if (response === true) {
-                    questionScore1 = 1;
-                    questionScore2 = 2; // You can adjust these values as per your needs
+                    questionScore1 += questionElement.weight1true;
+                    questionScore2 += questionElement.weight2true; // You can adjust these values as per your needs
                     questionAnswer = "Yes";
                 } else if (response === false) {
-                    questionScore1 = 0;
-                    questionScore2 = 0;
+                    questionScore1 += questionElement.weight1false
+                    questionScore2 += questionElement.weight2false
                     questionAnswer = "No";
                 }
                 questionDetails.push({

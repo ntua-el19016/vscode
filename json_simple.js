@@ -57,7 +57,11 @@ const json_simple = {
         {
           "type": "boolean",
           "name": "question6",
-          "title": "Do you agree with the statement?"
+          "title": "Do you agree with the statement?",
+          "weight1true": 1,
+          "weight2false": -1,
+          "weight1false": -2,
+          "weight2true": 2
         },
         {
           "type": "imagepicker",
