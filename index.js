@@ -719,11 +719,11 @@ const calculateScore = function(surveyData, surveyJson) {
                     multipleTextAnswer += `${item.title}: ${itemAnswer || 'No answer'}\n`;
 
                     if (itemAnswer) {
-                        multipleTextBeneficence += 1;
-                        multipleTextNonMaleficence += 1;
-                        multipleTextAutonomy += 1;
-                        multipleTextJustice += 1;
-                        multipleTextExplicability += 1;
+                        multipleTextBeneficence += 0;
+                        multipleTextNonMaleficence += 0;
+                        multipleTextAutonomy += 0;
+                        multipleTextJustice += 0;
+                        multipleTextExplicability += 0;
                     }
                 });
                 questionBeneficence = multipleTextBeneficence;

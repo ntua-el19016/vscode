@@ -281,16 +281,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question12",
                           "title": "Have you or any other authorities conducted another impact assessment?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "text",
@@ -307,16 +307,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question16",
                           "title": "Will some independent party review your answer's once the assessment is completed? ",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "multipletext",
@@ -782,16 +782,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question25",
                           "title": "Is your system a General Purpose AI model? \n",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -837,7 +837,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "No. We have not yet started to develop an AI strategy",
@@ -846,7 +846,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -864,7 +864,7 @@ const json_simple = {
                               {
                                   "text": "There is clear leadership / ownership of our organization\u2019s AI strategy",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -873,11 +873,11 @@ const json_simple = {
                               {
                                   "text": "Hybrid system",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Organic and decentralized",
@@ -886,7 +886,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               }
                           ]
                       },
@@ -907,7 +907,7 @@ const json_simple = {
                               {
                                   "text": "Yes, we have a process but are still working on actual metrics",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -916,7 +916,7 @@ const json_simple = {
                               {
                                   "text": "No, we don\u2019t have a process or metrics, but we are likely to have this in the next 12 months",
                                   "value": "Item 6",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -925,7 +925,7 @@ const json_simple = {
                               {
                                   "text": "No, we don\u2019t have a process of metrics and we are unlikely to have this in the next 12 months",
                                   "value": "Item 7",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -956,7 +956,7 @@ const json_simple = {
                               {
                                   "text": "Yes . Only a short-term financial strategy is in place",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -965,7 +965,7 @@ const json_simple = {
                               {
                                   "text": "No . But we are currently underway with developing a financial strategy",
                                   "value": "Item 6",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -974,7 +974,7 @@ const json_simple = {
                               {
                                   "text": "No. We have no plans presently to develop a financial strategy",
                                   "value": "Item 7",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1005,7 +1005,7 @@ const json_simple = {
                               {
                                   "text": "AI deployment is given equal priority alongside other technological initiatives. We have some additional funding available",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1014,7 +1014,7 @@ const json_simple = {
                               {
                                   "text": "AI deployment is important, but we will have to cut spending across other technical initiatives to fund it",
                                   "value": "Item 6",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1023,7 +1023,7 @@ const json_simple = {
                               {
                                   "text": "AI deployment is important, but depends on other technical initiatives to be in place first",
                                   "value": "Item 7",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1056,7 +1056,7 @@ const json_simple = {
                                   "text": "Highly scalable: designed with growth and future AI demands in mind",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1065,7 +1065,7 @@ const json_simple = {
                                   "text": "Moderately scalable: can handle current projects but need enhancements for more complex applications",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1074,7 +1074,7 @@ const json_simple = {
                                   "text": "Limited scalability: might need significant updates for large AI projects",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1083,7 +1083,7 @@ const json_simple = {
                                   "text": "Not scalable at all",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1108,7 +1108,7 @@ const json_simple = {
                                   "text": "Just enough GPU resources to cater to ongoing projects",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1117,7 +1117,7 @@ const json_simple = {
                                   "text": "Limited GPU resources for experimental purposes only",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1126,7 +1126,7 @@ const json_simple = {
                                   "text": "No, we don\u2019t have dedicated GPU resources available currently",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1150,7 +1150,7 @@ const json_simple = {
                               {
                                   "text": "We have some automated resource allocation processes, but manual intervention is often required",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1159,7 +1159,7 @@ const json_simple = {
                               {
                                   "text": "Resource allocation for AI tasks is done manually and might not be optimal",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1168,7 +1168,7 @@ const json_simple = {
                               {
                                   "text": "We do not have a structured approach to resource allocation for AI",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1194,7 +1194,7 @@ const json_simple = {
                                   "text": "Moderately optimal: rare hiccups with current workload, but will need improvement to cater to future demand",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1203,7 +1203,7 @@ const json_simple = {
                                   "text": "Sub optimal: we have occasional latency issues, especially with large AI workloads",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1212,7 +1212,7 @@ const json_simple = {
                                   "text": "Not optimal: we experience frequent issues and bottlenecks",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1237,7 +1237,7 @@ const json_simple = {
                                   "text": "Highly scalable: designed with significant AI growth in mind",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1246,7 +1246,7 @@ const json_simple = {
                                   "text": "Adequately scalable: might need periodic updates",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1255,7 +1255,7 @@ const json_simple = {
                                   "text": "Somewhat scalable: potential bottlenecks for very large AI projects",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1264,7 +1264,7 @@ const json_simple = {
                                   "text": "Not scalable: significant upgrades are required for large AI projects",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1289,7 +1289,7 @@ const json_simple = {
                                   "text": "Moderate integration: we've optimized major pathways but still have occasional hiccups",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1298,7 +1298,7 @@ const json_simple = {
                                   "text": "Some basic integrations, but often require manual adjustments",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1307,7 +1307,7 @@ const json_simple = {
                                   "text": "No integration: our network and AI systems operate mostly in silos",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1332,7 +1332,7 @@ const json_simple = {
                                   "text": "Moderate awareness: aware and have taken preliminary precautions",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1341,7 +1341,7 @@ const json_simple = {
                                   "text": "Limited awareness: have some basic understanding but no specific measures in place",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1350,7 +1350,7 @@ const json_simple = {
                                   "text": "Unaware of security threats specific to AI workloads",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1375,7 +1375,7 @@ const json_simple = {
                                   "text": "Advanced encryption measures in place, but may lack regular audits",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1384,7 +1384,7 @@ const json_simple = {
                                   "text": "Basic encryption measures in place",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1393,7 +1393,7 @@ const json_simple = {
                                   "text": "No specific encryption or protection measures",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1418,7 +1418,7 @@ const json_simple = {
                                   "text": "Moderately equipped: have protective measures in place but lack real-time monitoring",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1427,7 +1427,7 @@ const json_simple = {
                                   "text": "Somewhat equipped: we are aware of the risks and have basics sorted but lack robust measures",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1436,7 +1436,7 @@ const json_simple = {
                                   "text": "Not equipped: have not considered the cybersecurity aspect of AI workloads",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1461,7 +1461,7 @@ const json_simple = {
                                   "text": "Advanced role-based access controls with periodic audits",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1470,7 +1470,7 @@ const json_simple = {
                                   "text": "Basic role-based access in place but may lack regular updates",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1479,7 +1479,7 @@ const json_simple = {
                                   "text": "Access is largely open and not specifically restricted",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1503,7 +1503,7 @@ const json_simple = {
                               {
                                   "text": "Somewhat prepared: some measures in place to address power consumption concerns in AI deployment",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1512,7 +1512,7 @@ const json_simple = {
                               {
                                   "text": "Not prepared: no specific measures or considerations for power consumption in AI deployment",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1544,7 +1544,7 @@ const json_simple = {
                               {
                                   "text": "Moderately centralized: majority of data is in unified databases, but some silos remain",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1553,7 +1553,7 @@ const json_simple = {
                               {
                                   "text": "Partially fragmented: some centralized databases, but many department\u2014specific silos exist",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1562,7 +1562,7 @@ const json_simple = {
                               {
                                   "text": "Highly fragmented: data is scattered across different silos",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1587,7 +1587,7 @@ const json_simple = {
                               {
                                   "text": "Mostly pre-processed: most of our data is primed for AI use",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1596,7 +1596,7 @@ const json_simple = {
                               {
                                   "text": "Occasionally pre-processed: some datasets are AI-ready, but many require additional work",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1605,7 +1605,7 @@ const json_simple = {
                               {
                                   "text": "Rarely pre-processed: significant time is needed to clean and organize data for AI",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1622,7 +1622,7 @@ const json_simple = {
                                   "text": "Facilitative: procedures actively promote efficient data access for AI",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1630,8 +1630,8 @@ const json_simple = {
                               {
                                   "text": "Balanced: while there are protocols, they don't overly impede access",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1639,8 +1639,8 @@ const json_simple = {
                               {
                                   "text": "Somewhat restrictive: procedures exist but are not streamlined so there can be occasional issues",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1648,7 +1648,7 @@ const json_simple = {
                               {
                                   "text": "Restrictive: cumbersome protocols hinder timely access",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1673,7 +1673,7 @@ const json_simple = {
                               {
                                   "text": "Moderately integrated: most tools connect seamlessly with our main data sources",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1682,7 +1682,7 @@ const json_simple = {
                               {
                                   "text": "Somewhat integrated: some tools interface directly with data sources, but many require manual bridging",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1691,7 +1691,7 @@ const json_simple = {
                               {
                                   "text": "Not integrated: manual processes dominate tool\u2014data interactions",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1716,7 +1716,7 @@ const json_simple = {
                               {
                                   "text": "Good: a balance of general-purpose and AI-specific analytics tools",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1725,7 +1725,7 @@ const json_simple = {
                               {
                                   "text": "Fair: some tools are AI-enhanced, but there's significant reliance on general tools",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1734,7 +1734,7 @@ const json_simple = {
                               {
                                   "text": "Basic: tools are more general-purpose and don't cater specifically to AI",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1759,7 +1759,7 @@ const json_simple = {
                               {
                                   "text": "Moderately adaptable: tools cater to most AI projects, with occasional need for third-party solutions",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1768,7 +1768,7 @@ const json_simple = {
                               {
                                   "text": "Somewhat adaptable: tools can handle current tasks but might struggle with larger, more complex projects",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1777,7 +1777,7 @@ const json_simple = {
                               {
                                   "text": "Not adaptable: tools often lag behind project requirements",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1802,7 +1802,7 @@ const json_simple = {
                               {
                                   "text": "Moderate: most staff can handle regular AI analytics tasks efficiently",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1811,7 +1811,7 @@ const json_simple = {
                               {
                                   "text": "Intermediate: staff can use tools but often need guidance for advanced functions related to AI",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1820,7 +1820,7 @@ const json_simple = {
                               {
                                   "text": "Beginner: significant training is required",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1845,28 +1845,28 @@ const json_simple = {
                               {
                                   "text": "Intermediate: we have a systematic process for any external data we incorporate",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Basic: we do some manual checks",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
                                   "text": "We have no systematic processes",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -1891,8 +1891,8 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 1,
+                                  "explicability": 1
                               },
                               {
                                   "text": "We have basic tracking but lack comprehensive lineage details",
@@ -1900,8 +1900,8 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 2,
+                                  "explicability": 2
                               },
                               {
                                   "text": "We do not actively track data origins",
@@ -1909,8 +1909,8 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 3,
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -1934,7 +1934,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -1943,7 +1943,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -1952,7 +1952,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -1968,16 +1968,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question34",
                           "title": "Does your organisation have a defined set of values that should guide the development of AI systems",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
                           "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -1990,16 +1990,16 @@ const json_simple = {
                           "name": "question36",
                           "visibleIf": "{question34} = true",
                           "title": "Have those values been communicated externally ?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
                           "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -2012,16 +2012,16 @@ const json_simple = {
                           "name": "question38",
                           "visibleIf": "{question34} = true",
                           "title": "Have these values been communicated internally ? ",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
                           "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -2033,16 +2033,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question46",
                           "title": "Do you have an established AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices, including potential unclear grey areas ?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
                           "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "radiogroup",
@@ -2064,7 +2064,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -2073,7 +2073,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -2082,7 +2082,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -2107,7 +2107,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -2116,7 +2116,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -2125,7 +2125,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -2150,7 +2150,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -2159,7 +2159,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -2168,7 +2168,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -2194,7 +2194,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Limited transparency: some understanding but lacks depth",
@@ -2203,7 +2203,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Completely black box: no understanding of decision mechanisms",
@@ -2212,7 +2212,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -2236,7 +2236,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -2245,7 +2245,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -2254,7 +2254,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -2277,7 +2277,7 @@ const json_simple = {
                                   "text": "Moderate understanding: have protocols in place, but occasional lapses occur",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2286,7 +2286,7 @@ const json_simple = {
                                   "text": "Basic understanding, but no systematic adherence",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2295,7 +2295,7 @@ const json_simple = {
                                   "text": "Unaware of global privacy standards",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2320,7 +2320,7 @@ const json_simple = {
                                   "text": "Advanced anonymization techniques for most AI datasets",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2329,7 +2329,7 @@ const json_simple = {
                                   "text": "Basic anonymization techniques applied inconsistently",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2338,7 +2338,7 @@ const json_simple = {
                                   "text": "No anonymization: data is used as is",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2363,7 +2363,7 @@ const json_simple = {
                                   "text": "Structured protocol with designated teams but rarely reviewed",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2372,7 +2372,7 @@ const json_simple = {
                                   "text": "Basic protocol, but not comprehensive or tested",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2381,7 +2381,7 @@ const json_simple = {
                                   "text": "No established protocol for breaches",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2406,7 +2406,7 @@ const json_simple = {
                                   "text": "Good understanding of major regions/countries",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2415,7 +2415,7 @@ const json_simple = {
                                   "text": "Basic awareness but lacks depth",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2424,7 +2424,7 @@ const json_simple = {
                                   "text": "Not aware of data sovereignty laws",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2449,7 +2449,7 @@ const json_simple = {
                                   "text": "Advanced Protocols: regular checks to ensure compliance with major regions' sovereignty laws",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2458,7 +2458,7 @@ const json_simple = {
                                   "text": "Basic protocols: some alignment with sovereignty laws, but not consistent",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2467,7 +2467,7 @@ const json_simple = {
                                   "text": "No specific protocols: data is stored wherever convenient",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2492,7 +2492,7 @@ const json_simple = {
                                   "text": "Structured protocols for most cross\u2014border transfers",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2501,7 +2501,7 @@ const json_simple = {
                                   "text": "Aware but might have occasional lapses in adherence",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2510,7 +2510,7 @@ const json_simple = {
                                   "text": "We don't consider sovereignty during cross\u2014border transfers",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2535,7 +2535,7 @@ const json_simple = {
                                   "text": "Moderately comprehensive",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2544,7 +2544,7 @@ const json_simple = {
                                   "text": "Limited",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2553,7 +2553,7 @@ const json_simple = {
                                   "text": "We do not have any",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2584,7 +2584,7 @@ const json_simple = {
                               {
                                   "text": "Moderately well resourced",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2593,7 +2593,7 @@ const json_simple = {
                               {
                                   "text": "Moderately under resourced",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2602,7 +2602,7 @@ const json_simple = {
                               {
                                   "text": "Significantly under resourced",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2627,7 +2627,7 @@ const json_simple = {
                               {
                                   "text": "Moderate: most staff can handle regular AI related tasks efficiently",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2636,7 +2636,7 @@ const json_simple = {
                               {
                                   "text": "Intermediate: staff can use tools but often need guidance for advanced functions",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2645,7 +2645,7 @@ const json_simple = {
                               {
                                   "text": "Beginner: significant training is required",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2670,7 +2670,7 @@ const json_simple = {
                               {
                                   "text": "Yes, we have comprehensive internal training programs",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2679,7 +2679,7 @@ const json_simple = {
                               {
                                   "text": "No, we have not implemented training programs yet but plan to in the future",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2704,7 +2704,7 @@ const json_simple = {
                               {
                                   "text": "Yes, we have thought about it, but there are no clear answers",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2713,7 +2713,7 @@ const json_simple = {
                               {
                                   "text": "Yes, we are aware but we don\u2019t build these AI tools so we can\u2019t control this aspect",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2722,7 +2722,7 @@ const json_simple = {
                               {
                                   "text": "No, this is not a consideration at this time",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2746,7 +2746,7 @@ const json_simple = {
                                   "text": "High urgency: the move to embrace AI is seen as highly important and urgent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2754,8 +2754,8 @@ const json_simple = {
                               {
                                   "text": "Moderate urgency: embracing AI is seen as important but the organization is not acting with urgency",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2763,7 +2763,7 @@ const json_simple = {
                               {
                                   "text": "Limited urgency: embracing AI is seen as an inevitable driver of some change but not important or critical",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2772,7 +2772,7 @@ const json_simple = {
                               {
                                   "text": "No urgency: there is no discussion or momentum around embracing AI within the organization",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2797,7 +2797,7 @@ const json_simple = {
                               {
                                   "text": "Moderate receptiveness: general acceptance and willingness to adopt",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2806,7 +2806,7 @@ const json_simple = {
                               {
                                   "text": "Limited receptiveness: only limited teams / stakeholders accepting and willing to adopt",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2815,7 +2815,7 @@ const json_simple = {
                               {
                                   "text": "Not receptive: resistant to change and will struggle to adapt",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2840,7 +2840,7 @@ const json_simple = {
                               {
                                   "text": "Moderate receptiveness: general acceptance and willingness to adopt",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2849,7 +2849,7 @@ const json_simple = {
                               {
                                   "text": "Limited receptiveness: only limited teams / stakeholders accepting and willing to adopt",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2883,7 +2883,7 @@ const json_simple = {
                               {
                                   "text": "Moderate receptiveness: general acceptance and willingness to adopt",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2892,7 +2892,7 @@ const json_simple = {
                               {
                                   "text": "Limited receptiveness: only limited teams / stakeholders accepting and willing to adopt",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2901,7 +2901,7 @@ const json_simple = {
                               {
                                   "text": "Not receptive: resistant to change and will struggle to adapt",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2935,7 +2935,7 @@ const json_simple = {
                               {
                                   "text": "Moderate receptiveness: general acceptance and willingness to adopt",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2944,7 +2944,7 @@ const json_simple = {
                               {
                                   "text": "Limited receptiveness: only limited teams / stakeholders accepting and willing to adopt",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2953,7 +2953,7 @@ const json_simple = {
                               {
                                   "text": "Not receptive: resistant to change and will struggle to adapt",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2965,16 +2965,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question67",
                           "title": "Do you have a change management plan in place to address the changes brought about by developing/deploying AI technologies?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
                           "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "non_maleficenceFalse": 2,
+                          "autonomyFalse": 1,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "radiogroup",
@@ -2993,8 +2993,8 @@ const json_simple = {
                               {
                                   "text": "In progress: we have some areas fully covered; others are under review",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3002,8 +3002,8 @@ const json_simple = {
                               {
                                   "text": "Draft: just started developing",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3064,11 +3064,18 @@ const json_simple = {
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
-                              }
+                              },
+                              {
+                                "text": "None of the aforementioned things happen",
+                                "value": "Item 4",
+                                "beneficence": 3,
+                                "non_maleficence": 0,
+                                "autonomy": 0,
+                                "justice": 0,
+                                "explicability": 0
+                            }
                           ],
-                          "showOtherItem": true,
-                          "showNoneItem": true,
-                          "noneText": "None of the aforementioned things happen"
+                          "showOtherItem": true
                       },
                       {
                           "type": "comment",
@@ -3180,16 +3187,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question87",
                           "title": "Did you consider a mechanism to include the participation of the widest range of possible stakeholders in the AI system's design and development ?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 1,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
                           "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -3205,7 +3212,7 @@ const json_simple = {
                               {
                                   "text": "Non-existent",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": 4,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3214,7 +3221,7 @@ const json_simple = {
                               {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3223,7 +3230,7 @@ const json_simple = {
                               {
                                   "text": "Almost adequate",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3232,7 +3239,7 @@ const json_simple = {
                               {
                                   "text": "Adequate",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3266,7 +3273,7 @@ const json_simple = {
                               {
                                   "text": "Yes. We have defined performance criteria that are less applicable and more like general goals that our system should meet.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3275,7 +3282,7 @@ const json_simple = {
                               {
                                   "text": "No. We have not done such process.",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3306,7 +3313,7 @@ const json_simple = {
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 4,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3315,7 +3322,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 3,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3324,7 +3331,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3333,7 +3340,7 @@ const json_simple = {
                                   "value": "Item 4",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3358,7 +3365,7 @@ const json_simple = {
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 3,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3367,7 +3374,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3376,7 +3383,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -3415,7 +3422,7 @@ const json_simple = {
                               {
                                   "text": "Existing backlog of work or cases",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3424,7 +3431,7 @@ const json_simple = {
                               {
                                   "text": "Improve overall quality of decisions",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3433,7 +3440,7 @@ const json_simple = {
                               {
                                   "text": "Lower transaction costs of an existing program",
                                   "value": "Item 6",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3442,7 +3449,7 @@ const json_simple = {
                               {
                                   "text": "The system is performing tasks that humans could not accomplish in a reasonable period of time",
                                   "value": "Item 7",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3451,7 +3458,7 @@ const json_simple = {
                               {
                                   "text": "Use innovative approaches",
                                   "value": "Item 8",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3460,7 +3467,7 @@ const json_simple = {
                               {
                                   "text": "Eliminating delays in the current system",
                                   "value": "Item 9",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3469,7 +3476,7 @@ const json_simple = {
                               {
                                   "text": "Increasing the availability of services for the citizen",
                                   "value": "Item 10",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3482,31 +3489,31 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question71",
                           "title": "Will the system be making decisions or assessments that require judgement or discretion?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
+                          "beneficenceTrue": 1,
+                          "non_maleficenceTrue": 0,
                           "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "boolean",
                           "name": "question72",
                           "title": "Will the system perform an assessment or other operation that would not otherwise be completed by a human?  ",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": -2,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -3518,16 +3525,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question73",
                           "title": "Have attempts been made to implement process changes by methods other than automation?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
                           "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
+                          "non_maleficenceFalse": 0,
                           "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -3539,16 +3546,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question77",
                           "title": "Does your system rely on the initiative, cooperation or trust of persons  concerned?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 1,
+                          "autonomyTrue": 1,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "radiogroup",
@@ -3558,7 +3565,7 @@ const json_simple = {
                               {
                                   "text": "Very High - People are waiting for AI developments in that area and they have prior experience with similar systems",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3567,7 +3574,7 @@ const json_simple = {
                               {
                                   "text": "High - People are waiting for AI developments in that area but they haven't prior experience with similar systems",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3585,7 +3592,7 @@ const json_simple = {
                               {
                                   "text": "Low - People are suspicious of AI developments in that area but they haven't prior experience with similar systems",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3594,7 +3601,7 @@ const json_simple = {
                               {
                                   "text": "Very Low - People are suspicious of AI developments in that area due to prior bad experience with similar systems",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3610,8 +3617,8 @@ const json_simple = {
                               {
                                   "text": "Very likely",
                                   "value": "Item 1",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 4,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3619,8 +3626,8 @@ const json_simple = {
                               {
                                   "text": "Likely",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 3,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3628,8 +3635,8 @@ const json_simple = {
                               {
                                   "text": "Neutral",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3637,8 +3644,8 @@ const json_simple = {
                               {
                                   "text": "Not very likely",
                                   "value": "Item 4",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3669,7 +3676,7 @@ const json_simple = {
                               {
                                   "text": "Yes. The project falls within an area that creates high controversy among the general public.",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3678,7 +3685,7 @@ const json_simple = {
                               {
                                   "text": "Yes. The project falls within an area that creates high controversy among a specific demographic while the general public is mostly neutral about it.",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3687,7 +3694,7 @@ const json_simple = {
                               {
                                   "text": "Neutral. The project falls within an area that that has the potential to create controversy among the general public but hasn't so far.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3708,16 +3715,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question79",
                           "title": "Are clients in this line of business particularly vulnerable?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 3,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "checkbox",
@@ -3728,16 +3735,16 @@ const json_simple = {
                               {
                                   "text": "They are a part of a historically marginalised group (due to race, ethnicity, gender, sexual orientation, religious or political beliefs etc)",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "They are disabled/dealing with health issues",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3746,7 +3753,7 @@ const json_simple = {
                               {
                                   "text": "They are in a vulnerable emotional state / easily manipulated",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3755,7 +3762,7 @@ const json_simple = {
                               {
                                   "text": "They are children",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3764,7 +3771,7 @@ const json_simple = {
                               {
                                   "text": "They are not technologically literate",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3781,7 +3788,7 @@ const json_simple = {
                               {
                                   "text": "Very easily reversible",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3790,7 +3797,7 @@ const json_simple = {
                               {
                                   "text": "Easily reversible",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3799,7 +3806,7 @@ const json_simple = {
                               {
                                   "text": "Neutral",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3808,7 +3815,7 @@ const json_simple = {
                               {
                                   "text": "Difficult to reverse",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3817,7 +3824,7 @@ const json_simple = {
                               {
                                   "text": "Very difficult to reverse",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3847,7 +3854,7 @@ const json_simple = {
                               {
                                   "text": "minutes",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3856,7 +3863,7 @@ const json_simple = {
                               {
                                   "text": "hours",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3865,7 +3872,7 @@ const json_simple = {
                               {
                                   "text": "days",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3874,7 +3881,7 @@ const json_simple = {
                               {
                                   "text": "years",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 4,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3896,7 +3903,7 @@ const json_simple = {
                                   "text": "Autonomy/agency loss",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3905,7 +3912,7 @@ const json_simple = {
                                   "text": "Impersonation/identity theft",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3914,7 +3921,7 @@ const json_simple = {
                                   "text": "IP/copyright loss",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3923,7 +3930,7 @@ const json_simple = {
                                   "text": "Personality rights loss",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3940,7 +3947,7 @@ const json_simple = {
                                   "text": "Bodily injury",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3949,7 +3956,7 @@ const json_simple = {
                                   "text": "Loss of life",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3958,7 +3965,7 @@ const json_simple = {
                                   "text": "Personal health deterioration",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3967,7 +3974,7 @@ const json_simple = {
                                   "text": "Property damage",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3984,7 +3991,7 @@ const json_simple = {
                                   "text": "Addiction",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3993,7 +4000,7 @@ const json_simple = {
                                   "text": "Alienation/isolation",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4002,7 +4009,7 @@ const json_simple = {
                                   "text": "Anxiety/distress",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4011,7 +4018,7 @@ const json_simple = {
                                   "text": "Coercion/manipulation",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4020,7 +4027,7 @@ const json_simple = {
                                   "text": "Dehumanisation/objectification",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4029,7 +4036,7 @@ const json_simple = {
                                   "text": "Harassement/abuse/intimidation",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4038,7 +4045,7 @@ const json_simple = {
                                   "text": "Over-reliance",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4047,7 +4054,7 @@ const json_simple = {
                                   "text": "Radicalisation",
                                   "value": "Item 8",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4056,7 +4063,7 @@ const json_simple = {
                                   "text": "Self-harm",
                                   "value": "Item 9",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4065,7 +4072,7 @@ const json_simple = {
                                   "text": "Sexualization",
                                   "value": "Item 10",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4074,7 +4081,7 @@ const json_simple = {
                                   "text": "Trauma",
                                   "value": "Item 11",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4091,7 +4098,7 @@ const json_simple = {
                                   "text": "Defamation/libel/slander",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4100,7 +4107,7 @@ const json_simple = {
                                   "text": "Loss of confidence/trust",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4117,7 +4124,7 @@ const json_simple = {
                                   "text": "Business operations / infrastructure damage",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4126,7 +4133,7 @@ const json_simple = {
                                   "text": "Confidentiality loss",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4135,7 +4142,7 @@ const json_simple = {
                                   "text": "Financial/earnings loss",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4144,7 +4151,7 @@ const json_simple = {
                                   "text": "Livelihood loss",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4153,7 +4160,7 @@ const json_simple = {
                                   "text": "Monopolisation",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4162,7 +4169,7 @@ const json_simple = {
                                   "text": "Opportunity loss",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4179,7 +4186,7 @@ const json_simple = {
                                   "text": "Benefits / entitlements loss",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4188,7 +4195,7 @@ const json_simple = {
                                   "text": "Dignity loss",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4197,7 +4204,7 @@ const json_simple = {
                                   "text": "Discrimination",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4206,7 +4213,7 @@ const json_simple = {
                                   "text": "Loss of freedom of speech/expression",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4215,7 +4222,7 @@ const json_simple = {
                                   "text": "Loss of freedom of assembly/association",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4224,7 +4231,7 @@ const json_simple = {
                                   "text": "Loss of social rights and access to public services",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4233,7 +4240,7 @@ const json_simple = {
                                   "text": "Loss of right to information",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4242,7 +4249,7 @@ const json_simple = {
                                   "text": "Loss of right to free elections",
                                   "value": "Item 8",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4251,7 +4258,7 @@ const json_simple = {
                                   "text": "Loss of right to liberty and security",
                                   "value": "Item 9",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4260,7 +4267,7 @@ const json_simple = {
                                   "text": "Loss of right to due process",
                                   "value": "Item 10",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4269,7 +4276,7 @@ const json_simple = {
                                   "text": "Privacy loss",
                                   "value": "Item 11",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4286,7 +4293,7 @@ const json_simple = {
                                   "text": "Critical infrastructure damage",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4295,7 +4302,7 @@ const json_simple = {
                                   "text": "Economic instability",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4304,7 +4311,7 @@ const json_simple = {
                                   "text": "Power concentration",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4313,7 +4320,7 @@ const json_simple = {
                                   "text": "Electoral interference",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4322,7 +4329,7 @@ const json_simple = {
                                   "text": "Institutional trust loss",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4331,7 +4338,7 @@ const json_simple = {
                                   "text": "Political instability",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4340,7 +4347,7 @@ const json_simple = {
                                   "text": "Political manipulation",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4357,7 +4364,7 @@ const json_simple = {
                                   "text": "Biodiversity loss",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4366,7 +4373,7 @@ const json_simple = {
                                   "text": "Carbon emissions",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4375,7 +4382,7 @@ const json_simple = {
                                   "text": "Electronic waste",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4384,7 +4391,7 @@ const json_simple = {
                                   "text": "Excessive energy consumption",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4393,7 +4400,7 @@ const json_simple = {
                                   "text": "Excessive landfil",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4402,7 +4409,7 @@ const json_simple = {
                                   "text": "Excessive water consumption",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4411,7 +4418,7 @@ const json_simple = {
                                   "text": "Natural resource extraction",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4420,7 +4427,7 @@ const json_simple = {
                                   "text": "Pollution",
                                   "value": "Item 8",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4437,7 +4444,7 @@ const json_simple = {
                                   "text": "The system create the risk of de-skilling your staff",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4446,7 +4453,7 @@ const json_simple = {
                                   "text": "The system promotes or requires new (digital) skills",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4455,7 +4462,7 @@ const json_simple = {
                                   "text": "The system requires special abilities not yet available in your existing staff.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4464,7 +4471,7 @@ const json_simple = {
                                   "text": "The system reduces the number of staff required in your administrative agency,",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4508,7 +4515,7 @@ const json_simple = {
                                   "text": "Unstructured data (e.g., text, images, audio)",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4517,8 +4524,8 @@ const json_simple = {
                                   "text": "Semi-structured data (e.g., JSON, XML)",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 1,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4526,8 +4533,8 @@ const json_simple = {
                                   "text": "Real-time data streams (e.g., IoT sensors)",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 2,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -4547,15 +4554,15 @@ const json_simple = {
                                   "text": "Data scientists",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Domain experts",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -4565,15 +4572,15 @@ const json_simple = {
                                   "text": "Legal/compliance teams",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": -1,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
                               {
                                   "text": "External consultants",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -4641,7 +4648,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Yes, from a mix of both",
@@ -4650,7 +4657,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               }
                           ],
                           "showNoneItem": true,
@@ -4675,7 +4682,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -4727,16 +4734,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question105",
                           "title": "Is your system being trained, was it developed or is operated by using or processing personal data (including special categories of personal data)? \n",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 2,
                           "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "radiogroup",
@@ -4756,8 +4763,8 @@ const json_simple = {
                                   "text": "Protected A",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 1,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4765,8 +4772,8 @@ const json_simple = {
                                   "text": "Classified-Confidential",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 2,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4774,8 +4781,8 @@ const json_simple = {
                                   "text": "Protected B-Protected C",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 3,
+                                  "autonomy": 3,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4783,8 +4790,8 @@ const json_simple = {
                                   "text": "Secret-Top Secret",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 4,
+                                  "autonomy": 4,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -4799,8 +4806,8 @@ const json_simple = {
                                   "text": "High",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 2,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4808,8 +4815,8 @@ const json_simple = {
                                   "text": "Moderate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 1,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4839,7 +4846,7 @@ const json_simple = {
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4848,7 +4855,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4857,7 +4864,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -4874,7 +4881,7 @@ const json_simple = {
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4883,7 +4890,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4892,7 +4899,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4901,7 +4908,7 @@ const json_simple = {
                                   "value": "Item 4",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -4918,7 +4925,7 @@ const json_simple = {
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4927,7 +4934,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4936,7 +4943,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -4962,7 +4969,7 @@ const json_simple = {
                                   "value": "Item 4",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4971,7 +4978,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -4980,7 +4987,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 3,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -5005,7 +5012,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -5014,7 +5021,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 2,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -5029,72 +5036,72 @@ const json_simple = {
                                   "text": "Racial or ethnic origin",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Political opinions",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Religious and philosophical beliefs",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Trade union membership",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Genetic data",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Biometric data",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Health data",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "Sex life and sexual orientation",
                                   "value": "Item 8",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               }
                           ],
@@ -5108,7 +5115,7 @@ const json_simple = {
                               {
                                   "text": "Explicit consent",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5117,7 +5124,7 @@ const json_simple = {
                               {
                                   "text": "Necessary for employment and social security purposes",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5126,7 +5133,7 @@ const json_simple = {
                               {
                                   "text": "Protection of the vital interests of the data subject or of another natural person",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5135,7 +5142,7 @@ const json_simple = {
                               {
                                   "text": "In the course of legitimate activities by a foundation and similar bodies",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5144,7 +5151,7 @@ const json_simple = {
                               {
                                   "text": "Related to personal data which are manifestly made public by the data subject",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5153,7 +5160,7 @@ const json_simple = {
                               {
                                   "text": "Necessary for the establishment, exercise or defence of legal claims",
                                   "value": "Item 6",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5162,7 +5169,7 @@ const json_simple = {
                               {
                                   "text": "Necessary for reasons of substantial public interest, on the basis of union or Member State law",
                                   "value": "Item 7",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5171,7 +5178,7 @@ const json_simple = {
                               {
                                   "text": "Necessary for medicinal purposes or for the management of health systems and services",
                                   "value": "Item 8",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5180,7 +5187,7 @@ const json_simple = {
                               {
                                   "text": "Necessary for reasons of public interest in the area of public health",
                                   "value": "Item 9",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5189,7 +5196,7 @@ const json_simple = {
                               {
                                   "text": "Necessary for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes",
                                   "value": "Item 10",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -5222,7 +5229,7 @@ const json_simple = {
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -5231,7 +5238,7 @@ const json_simple = {
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 4,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -5255,7 +5262,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 4,
                                   "explicability": 0
                               },
                               {
@@ -5264,7 +5271,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               },
                               {
@@ -5282,7 +5289,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 4,
                                   "explicability": 0
                               }
                           ]
@@ -5311,7 +5318,7 @@ const json_simple = {
                                   "text": "Yes, but the annotation was done by untrained individuals",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5320,7 +5327,7 @@ const json_simple = {
                                   "text": "No, we did not analyse or annotate unstructured data",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5346,7 +5353,7 @@ const json_simple = {
                                   "text": "Yes, but only occasionally",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5355,7 +5362,7 @@ const json_simple = {
                                   "text": "No, their work is not monitored",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5365,19 +5372,19 @@ const json_simple = {
                       {
                           "type": "boolean",
                           "name": "question112",
-                          "title": "Is the dataset static (ie fixed and clearly defined) or is it dynamic (ie continuously fed with new data)?\n",
+                          "title": "Is the dataset dynamic (ie continuously fed with new data) or static (ie fixed and clearly defined) ?\n",
                           "labelTrue": "Dynamic",
                           "labelFalse": "Static",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
                           "autonomyTrue": 2,
-                          "justiceTrue": 1,
+                          "justiceTrue": 2,
                           "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "radiogroup",
@@ -5400,7 +5407,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5409,7 +5416,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -5418,12 +5425,20 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
-                              }
+                              },
+                              {
+                                "text": "None",
+                                "value": "Item 5",
+                                "beneficence": 0,
+                                "non_maleficence": 0,
+                                "autonomy": 0,
+                                "justice": 5,
+                                "explicability": 0
+                            }
                           ],
                           "showOtherItem": true,
-                          "showNoneItem": true
                       },
                       {
                           "type": "radiogroup",
@@ -5443,7 +5458,7 @@ const json_simple = {
                                   "text": "Yes, we used a moderate amount",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5452,7 +5467,7 @@ const json_simple = {
                                   "text": "No, we used more data than necessary",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5461,7 +5476,7 @@ const json_simple = {
                                   "text": "We are unsure",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5488,7 +5503,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5497,7 +5512,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               },
                               {
@@ -5506,7 +5521,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5531,7 +5546,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5540,7 +5555,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5565,7 +5580,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5574,7 +5589,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5599,7 +5614,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -5608,7 +5623,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5633,7 +5648,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -5642,7 +5657,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5667,7 +5682,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -5676,7 +5691,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5701,7 +5716,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -5710,7 +5725,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5727,7 +5742,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5736,7 +5751,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5745,7 +5760,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               }
                           ],
@@ -5763,7 +5778,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5772,7 +5787,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5781,7 +5796,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5790,7 +5805,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5799,7 +5814,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5808,7 +5823,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5817,7 +5832,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5826,7 +5841,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5835,7 +5850,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5844,7 +5859,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5853,7 +5868,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5862,7 +5877,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5871,7 +5886,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5880,7 +5895,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5889,7 +5904,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -5898,7 +5913,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               }
                           ],
@@ -5916,7 +5931,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -5,
                                   "explicability": 0
                               },
                               {
@@ -5925,7 +5940,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -3,
                                   "explicability": 0
                               },
                               {
@@ -5934,7 +5949,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5950,7 +5965,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
@@ -5968,7 +5983,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 5,
                                   "explicability": 0
                               }
                           ]
@@ -5991,7 +6006,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -6000,7 +6015,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6048,16 +6063,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question186",
                           "title": "Is the model based on some pre-existing similar model/tool/system?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
                           "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -6095,7 +6110,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Machine Learning : Here we study how agents can improve their behavior through the diligent study of data and examples without explicit programming.",
@@ -6104,7 +6119,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Physical environment interaction method : Here we consider how an agent can make inferences and act on them in the unfiltered real world.",
@@ -6139,8 +6154,8 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 1,
+                                  "explicability": 1
                               },
                               {
                                   "text": "Reinforcement learning : Here learning is based on the agent's interaction with its environment. More specifically, the agent receives feedback in the form of rewards or penalties based on its actions and its goal is to discover a strategy that maximizes the cumulative reward over time.",
@@ -6149,7 +6164,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               }
                           ],
                           "showOtherItem": true
@@ -6208,37 +6223,37 @@ const json_simple = {
                                   "text": "The system makes recommendations to people who don't necessarily have the appropriate knowledge to contest them",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "non_maleficence": 1,
+                                  "autonomy": 1,
+                                  "justice": 1,
+                                  "explicability": 1
                               },
                               {
                                   "text": "The system makes decisions but has regular oversight from humans",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "non_maleficence": 2,
+                                  "autonomy": 2,
+                                  "justice": 2,
+                                  "explicability": 2
                               },
                               {
                                   "text": "The system makes decisions but in case of error or client complain a human can intervene and reverse the decision",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "non_maleficence": 3,
+                                  "autonomy": 3,
+                                  "justice": 3,
+                                  "explicability": 3
                               },
                               {
                                   "text": "The system makes decisions and there are no human oversight that can reverse that",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "non_maleficence": 4,
+                                  "autonomy": 4,
+                                  "justice": 4,
+                                  "explicability": 4
                               }
                           ]
                       },
@@ -6263,7 +6278,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Complex tasks, such as models based on many features, not easily interpretable by humans, resulting in highly variable predictions without clear boundaries between decision criteria. For such decisions, humans would have a difficult time agreeing on the best answer, and there may be no clearly incorrect answer. For example, a natural language processing system that generates prose based on user input prompts.",
@@ -6272,7 +6287,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 4
                               }
                           ]
                       },
@@ -6358,7 +6373,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "This is the first time that one or more system component(s) are to be validated in relevant environment(s) for the intended use. Operational conditions that can be supported have not yet been completely defined and evaluated.",
@@ -6367,7 +6382,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "This is the first time the whole system will be validated in relevant environment(s) for the intended use. Operational conditions that can be supported will also be validated. Alternatively, nearly similar systems or nearly similar methods have been applied by other organizations with defined success.",
@@ -6376,7 +6391,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               },
                               {
                                   "text": "The whole system has been deployed for all intended uses, and operational conditions have been qualified through testing and uses in production.",
@@ -6385,7 +6400,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 4
                               }
                           ]
                       }
@@ -6407,7 +6422,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6416,7 +6431,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6425,7 +6440,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6434,7 +6449,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6443,7 +6458,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6452,7 +6467,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6461,7 +6476,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6470,7 +6485,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6479,7 +6494,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6488,7 +6503,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6497,7 +6512,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -2,
                                   "explicability": 0
                               }
                           ],
@@ -6519,7 +6534,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6528,7 +6543,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6537,7 +6552,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6546,7 +6561,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6555,7 +6570,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6564,7 +6579,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6573,7 +6588,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6582,7 +6597,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6591,7 +6606,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6600,7 +6615,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -6609,7 +6624,7 @@ const json_simple = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               }
                           ],
@@ -6619,32 +6634,32 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question159",
                           "title": "If the system has an interface with the public, did you assess whether that interface reflects the variety of digital literacy and its usability by those with special needs or disabilities or those at risk of exclusion?\n",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": -2,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 2,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "boolean",
                           "name": "question160",
                           "visibleIf": "{question159} = true",
                           "title": "if yes, did you involve or consult with persons concerned in need of assistive technology during the design and development stages or the system?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": -2,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 2,
+                          "explicabilityFalse": 0
                       }
                   ]
               },
@@ -6665,7 +6680,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 4
                               },
                               {
                                   "text": "No, but other information about the algorithm (like system objectives, operating rules etc) will be available",
@@ -6674,27 +6689,36 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
-                              }
+                                  "explicability": 2
+                              },
+                              {
+                                "text": "Yes",
+                                "value": "Item 3",
+                                "beneficence": 0,
+                                "non_maleficence": 0,
+                                "autonomy": 0,
+                                "justice": 0,
+                                "explicability": -2
+                            }
                           ]
                       },
                       {
                           "type": "boolean",
                           "name": "question175",
                           "title": "Will the algorithm be a trade secret?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": 0,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 2,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
-                          "type": "checkbox",
+                          "type": "radiogroup",
                           "name": "question176",
                           "title": "Does the model provide explainations for its reasoning? ",
                           "choices": [
@@ -6714,7 +6738,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "It doesn't provide any explanation",
@@ -6723,7 +6747,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 5
                               }
                           ]
                       },
@@ -6739,7 +6763,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "The system provides brief explanations appropriate to be read by people have no specified knowledge of the field the system makes decisions for but have basic understanding of what an artificial intelligence is.",
@@ -6748,7 +6772,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "The system provides explanations for people knowledgable in the field the system makes decisions in.",
@@ -6757,7 +6781,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "The systems provides explanation appropriate for its developers",
@@ -6766,7 +6790,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               }
                           ]
                       },
@@ -6776,31 +6800,31 @@ const json_simple = {
                           "title": "Have the above  groups (general audiences, experts in the field, developers) been consulted/surveyed in the process of making the explanations the systems gives better",
                           "choices": [
                               {
-                                  "text": "We have only tested the expandability of our model with experts in the field",
+                                  "text": "We have tested the expandability of our model with experts in the field",
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               },
                               {
-                                  "text": "No we have only tested the expandability of our model with developers",
+                                  "text": "No we have tested the expandability of our model with developers",
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               },
                               {
-                                  "text": "We have only tested the expandability of our model with general audiences",
+                                  "text": "We have tested the expandability of our model with general audiences",
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               }
                           ]
                       },
@@ -6816,7 +6840,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 4
                               },
                               {
                                   "text": "Yes, but its optional whether the end user will engage with the training or not",
@@ -6825,7 +6849,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Yes and its mandatory",
@@ -6850,7 +6874,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               },
                               {
                                   "text": "It can recognise when a prompt/task can be partially decided by its current expertise level",
@@ -6859,7 +6883,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               }
                           ],
                           "showNoneItem": true,
@@ -6886,7 +6910,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "Two-way interaction : This models a conversation between people. The person can probe further, and the machine can probe back, ask clarifying questions, or provide new avenues of exploration.",
@@ -6895,7 +6919,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -4
                               }
                           ]
                       },
@@ -6911,7 +6935,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               },
                               {
                                   "text": "Verbal (Written or auditory)",
@@ -6920,7 +6944,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               },
                               {
                                   "text": "Visual and auditory alerts (eg siren system )",
@@ -6929,7 +6953,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -1
                               }
                           ]
                       }
@@ -6952,7 +6976,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 5
                               },
                               {
                                   "text": "To some extent - Only for a brief period of time",
@@ -6961,7 +6985,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Yes",
@@ -6986,7 +7010,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 5
                               },
                               {
                                   "text": "To some extent - Only for a brief period of time",
@@ -6995,7 +7019,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Yes",
@@ -7020,7 +7044,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 5
                               },
                               {
                                   "text": "To some extent - Only for a brief period of time",
@@ -7029,7 +7053,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Yes",
@@ -7054,7 +7078,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 5
                               },
                               {
                                   "text": "To some extent - Only for a brief period of time",
@@ -7063,7 +7087,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Yes",
@@ -7094,7 +7118,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 5
                               },
                               {
                                   "text": "Completely Inadequate",
@@ -7103,7 +7127,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 4
                               },
                               {
                                   "text": "Almost Adequate",
@@ -7112,7 +7136,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               },
                               {
                                   "text": "Adequate",
@@ -7121,7 +7145,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "Fully Adequate",
@@ -7150,7 +7174,7 @@ const json_simple = {
                                   "text": "Regression testing: Regression testing is a type of testing that is used to find bugs in software that have already been fixed. This is done by running the software with different inputs and comparing the output to the expected output. This type of testing is used to verify that a software program continues to function properly after it has been modified or updated. This type of testing is typically performed after a new version of the software has been released, or after a change has been made to the code.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7159,7 +7183,7 @@ const json_simple = {
                                   "text": "Functional testing: Functional testing is a type of testing that is used to verify that a system or software performs as expected. Load testing is a type of testing that is used to verify that a system or software can handle a heavy load or traffic. This type of testing is typically performed by running the software through a series of tests that exercise the various functions of the software.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7168,7 +7192,7 @@ const json_simple = {
                                   "text": "Load testing: Load testing is a type of testing that is used to find bugs in software by running it with different inputs and checking if the output is as expected. It is used to verify that a software program is able to handle the load that is expected to be placed on it. This type of testing is typically done by running the software through a series of tests that simulate the load that the software will experience in production.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7177,7 +7201,7 @@ const json_simple = {
                                   "text": "Stress testing: Stress testing involves subjecting a system to intense or extreme conditions in order to see how well it holds up. This can help to identify potential issues that may only arise under high levels of stress or strain.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7186,7 +7210,7 @@ const json_simple = {
                                   "text": "Negative testing: Negative testing involves deliberately providing invalid or incorrect inputs to a system in order to see how it responds. This can help to uncover errors in input validation or handling that could lead to security vulnerabilities or data loss.",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7195,7 +7219,7 @@ const json_simple = {
                                   "text": "Fuzz testing: A fuzz test (also known as a fuzzing test) is a software testing technique, usually automated or semi-automated, that involves providing invalid, unexpected, or random data to the inputs of a computer program. The program is then monitored for exceptions such as crashes, failing built-in code assertions, or potential memory leaks. Fuzz testing is effective in finding coding errors and security vulnerabilities. This involves feeding random or invalid data into a system and seeing how it responds. This can help to find potential vulnerabilities in the system.",
                                   "value": "Item 6",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7204,7 +7228,7 @@ const json_simple = {
                                   "text": "Use case testing: Use case testing involves testing the system with realistic scenarios to see how it responds. This can help to identify potential usability issues.",
                                   "value": "Item 7",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7213,7 +7237,7 @@ const json_simple = {
                                   "text": "Security testing: Security Testing involves testing the system for security vulnerabilities. This can help to identify potential security risks.",
                                   "value": "Item 8",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7222,7 +7246,7 @@ const json_simple = {
                                   "text": "Black-box testing: Black-box testing is a method of software testing that examines the functionality of a software program without knowing the internal code structure. The tester is only aware of what the software is supposed to do but not how it does it. Black-box testing can be used to test the functionality of a software program, the usability of a user interface, and the compliance of a program with external standards.",
                                   "value": "Item 9",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7231,7 +7255,7 @@ const json_simple = {
                                   "text": "Mutation testing: Mutation testing is a type of software testing that involves modifying a program\u2019s source code or its inputs and then testing to see if the program still behaves as expected. The goal of mutation testing is to find faults in a program\u2019s code or inputs that can cause the program to produce incorrect results.",
                                   "value": "Item 10",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7240,7 +7264,7 @@ const json_simple = {
                                   "text": "Fault injection testing: Fault injection testing is a method of testing software by Introducing faults into the software program to see if the program can detect and handle the faults. Fault injection can be used to test the robustness of a program\u2019s error-handling capabilities.",
                                   "value": "Item 11",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7257,7 +7281,7 @@ const json_simple = {
                                   "text": "JUnit: JUnit is a popular open-source unit testing framework for Java. It is widely used in the Java development community and is well-suited for testing robustness. JUnit is easy to use and has a wide range of features, making it a good choice for robustness testing.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7266,7 +7290,7 @@ const json_simple = {
                                   "text": "TestNG: TestNG is another popular open-source unit testing framework for Java. Like JUnit, it is easy to use and has a wide range of features. TestNG is also well-suited for testing robustness.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7275,7 +7299,7 @@ const json_simple = {
                                   "text": "Spock: Spock is a Groovy-based testing framework that can be used for testing Java applications. It has a concise and expressive syntax that makes it easy to write tests. Spock is also well-suited for testing robustness.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7284,7 +7308,7 @@ const json_simple = {
                                   "text": "JMeter: JMeter is a popular open-source performance testing tool. It can be used to test the performance of web applications under load. JMeter is easy to use and has a wide range of features, making it a good choice for robustness testing.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7293,7 +7317,7 @@ const json_simple = {
                                   "text": "LoadRunner: LoadRunner is a commercial performance testing tool from HP. It can be used to test the performance of web applications under load. LoadRunner is more expensive than JMeter but has more features and is better suited for enterprise applications.",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7345,7 +7369,7 @@ const json_simple = {
                               {
                                   "text": "Yes, and it only included people with technical knowledge about AI technologies",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -7354,7 +7378,7 @@ const json_simple = {
                               {
                                   "text": "No",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -7443,7 +7467,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7452,7 +7476,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7461,7 +7485,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7470,7 +7494,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7567,7 +7591,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7576,7 +7600,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7585,7 +7609,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7594,7 +7618,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7719,7 +7743,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7728,7 +7752,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7737,7 +7761,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7746,7 +7770,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7835,7 +7859,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7844,7 +7868,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7853,7 +7877,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7862,7 +7886,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7971,7 +7995,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7980,7 +8004,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7989,7 +8013,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7998,7 +8022,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8127,7 +8151,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8136,7 +8160,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8145,7 +8169,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8154,7 +8178,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8295,7 +8319,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8304,7 +8328,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8313,7 +8337,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8322,7 +8346,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8431,7 +8455,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8440,7 +8464,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8449,7 +8473,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8458,7 +8482,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8571,7 +8595,7 @@ const json_simple = {
                                   "text": "Non - existent",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8580,7 +8604,7 @@ const json_simple = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8589,7 +8613,7 @@ const json_simple = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8598,7 +8622,7 @@ const json_simple = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8645,7 +8669,7 @@ const json_simple = {
                                   "text": "Yes, but the testing strategy is only partially documented.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8654,7 +8678,7 @@ const json_simple = {
                                   "text": "No, we do not have a defined testing strategy.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8685,7 +8709,7 @@ const json_simple = {
                                   "text": "Yes, but the documentation is incomplete or lacks detailed statistical analysis.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8694,7 +8718,7 @@ const json_simple = {
                                   "text": "No, we have not documented the model's performance in the testing environment.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8725,7 +8749,7 @@ const json_simple = {
                                   "text": "Yes, but the testing was limited and did not cover all edge cases.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8734,7 +8758,7 @@ const json_simple = {
                                   "text": "No, the model has not been tested for extreme values or protected attributes.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8765,7 +8789,7 @@ const json_simple = {
                                   "text": "Yes, but only some failure patterns have been identified.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8774,7 +8798,7 @@ const json_simple = {
                                   "text": "No, we have not identified any failure patterns.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8811,7 +8835,7 @@ const json_simple = {
                                   "text": "Yes, but only some key failure modes have been addressed.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8820,7 +8844,7 @@ const json_simple = {
                                   "text": "No, we have not addressed any key failure modes.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8845,7 +8869,7 @@ const json_simple = {
                                   "text": "Yes, but it only partially meets the performance criteria.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8854,7 +8878,7 @@ const json_simple = {
                                   "text": "No, but we are working to improve the model to meet the criteria.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8863,7 +8887,7 @@ const json_simple = {
                                   "text": "No, the model does not meet the performance criteria.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8898,7 +8922,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "No, we have not documented the deployment strategy.",
@@ -8907,7 +8931,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -8938,7 +8962,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "No, we have not documented the serving strategy.",
@@ -8947,7 +8971,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               }
                           ]
                       },
@@ -8975,7 +8999,7 @@ const json_simple = {
                                   "text": "Yes, but only some risks have been identified.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8984,7 +9008,7 @@ const json_simple = {
                                   "text": "No, we have not identified any risks.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9015,7 +9039,7 @@ const json_simple = {
                                   "text": "Yes, but only some risks have been addressed.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9024,7 +9048,7 @@ const json_simple = {
                                   "text": "No, we have not addressed any risks.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9054,7 +9078,7 @@ const json_simple = {
                               {
                                   "text": "Yes, but it only partially meets the performance criteria in production.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9063,7 +9087,7 @@ const json_simple = {
                               {
                                   "text": "No, but we are working to improve the model to meet the criteria.",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9072,7 +9096,7 @@ const json_simple = {
                               {
                                   "text": "No, the model does not meet the performance criteria in production.",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9095,11 +9119,11 @@ const json_simple = {
                               {
                                   "text": "IEEE CertifAIEd\u2122 (Certification program for assessing ethics of Autonomous Intelligent Systems (AIS) for their conformity to ethical privacy, transparency, accountability, and algorithmic bias criteria.)",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -4,
+                                  "non_maleficence": -4,
+                                  "autonomy": -4,
+                                  "justice": -4,
+                                  "explicability": -4
                               }
                           ],
                           "showOtherItem": true
@@ -9112,29 +9136,29 @@ const json_simple = {
                               {
                                   "text": "ISO/IEC TR 24028:2020 (Surveys approaches to establish trust in AI systems through transparency, explainability, controllability, etc., engineering pitfalls and typical associated threats and risks to AI systems and approaches to assess and achieve trustworthiness characteristics of AI systems.)",
                                   "value": "Item 1",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -5,
+                                  "non_maleficence": -5,
+                                  "autonomy": -5,
+                                  "justice": -5,
+                                  "explicability": -5
                               },
                               {
                                   "text": "ISO/IEC 42001:2023 (International standard that specifies requirements for establishing, implementing, maintaining, and continually improving an Artificial Intelligence Management System (AIMS) within organizations, ensuring responsible development and use of AI systems.)",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -3,
+                                  "non_maleficence": -3,
+                                  "autonomy": -3,
+                                  "justice": -3,
+                                  "explicability": -3
                               },
                               {
                                   "text": "ISO/IEC DIS 42005 (International standard that provides guidance for organizations performing AI system impact assessments. It includes considerations for how and when to perform such assessments and at what stages of the AI system lifecycle, as well as how this process can be integrated into an organization\u2019s AI risk management system.)",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -3,
+                                  "non_maleficence": -3,
+                                  "autonomy": -3,
+                                  "justice": -3,
+                                  "explicability": -3
                               }
                           ],
                           "showOtherItem": true
@@ -9157,8 +9181,8 @@ const json_simple = {
                                   "text": "Yes, but the DPIA is incomplete or lacks detail.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": -1,
+                                  "autonomy": -3,
                                   "justice": 0,
                                   "explicability": 0
                               },
@@ -9175,8 +9199,8 @@ const json_simple = {
                                   "text": "No, we have not conducted a DPIA.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 1,
+                                  "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -9190,29 +9214,29 @@ const json_simple = {
                               {
                                   "text": "OECD AI Principles (Principles that encompass AI systems that uphold human rights and privacy, are equitable, transparent, explainable, resilient, secure, and safe while ensuring accountability among all involved actors.)",
                                   "value": "Item 1",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -2,
+                                  "non_maleficence": -2,
+                                  "autonomy": -2,
+                                  "justice": -2,
+                                  "explicability": -2
                               },
                               {
                                   "text": "EU High-Level Expert Group on AI (HLEG AI) Guidelines (Guidelines for ethical and trustworthy AI practices.)",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -2,
+                                  "non_maleficence": -2,
+                                  "autonomy": -2,
+                                  "justice": -2,
+                                  "explicability": -2
                               },
                               {
                                   "text": "NIST AI Risk Management Framework (A risk management framework to better manage risks to individuals, organizations, and society associated with artificial intelligence (AI).)",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -2,
+                                  "non_maleficence": -2,
+                                  "autonomy": -2,
+                                  "justice": -2,
+                                  "explicability": -2
                               }
                           ],
                           "showOtherItem": true
@@ -9225,29 +9249,29 @@ const json_simple = {
                               {
                                   "text": "AI Verify Foundation (A framework and software toolkit designed for AI governance testing, validating the performance of AI systems based on a set of principles and aligning with AI governance frameworks such as those established by the European Union, OECD, and Singapore.)",
                                   "value": "Item 1",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -1,
+                                  "non_maleficence": -1,
+                                  "autonomy": -1,
+                                  "justice": -1,
+                                  "explicability": -1
                               },
                               {
                                   "text": "IBM AI Fairness 360 (A toolkit to help detect and mitigate bias in AI models.)",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -1,
+                                  "non_maleficence": -1,
+                                  "autonomy": -1,
+                                  "justice": -1,
+                                  "explicability": -1
                               },
                               {
                                   "text": "Microsoft Responsible AI Toolbox (A suite of tools providing a collection of model and data exploration and evaluation of AI systems to help improve their approach.)",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "beneficence": -1,
+                                  "non_maleficence": -1,
+                                  "autonomy": -1,
+                                  "justice": -1,
+                                  "explicability": -1
                               }
                           ]
                       }
@@ -9279,7 +9303,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "No, but we are in the process of establishing auditability mechanisms.",
@@ -9288,7 +9312,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "No, we have not established any auditability mechanisms.",
@@ -9297,7 +9321,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -9328,7 +9352,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "No, but we are working to make the system auditable by third parties.",
@@ -9337,7 +9361,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "No, the system cannot be audited by third parties.",
@@ -9346,7 +9370,7 @@ const json_simple = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -9354,16 +9378,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question234",
                           "title": "Did you foresee any kind of external guidance or third party auditing processes to oversee ethical concerns and accountability measures ?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
+                          "beneficenceTrue": 1,
+                          "non_maleficenceTrue": 1,
+                          "autonomyTrue": 1,
                           "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 0,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "comment",
@@ -9388,7 +9412,7 @@ const json_simple = {
                               {
                                   "text": "Yes, but the research or communication to stakeholders is incomplete.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9397,7 +9421,7 @@ const json_simple = {
                               {
                                   "text": "No, we have not researched or informed stakeholders about the legal framework.",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9435,7 +9459,7 @@ const json_simple = {
                               {
                                   "text": "We have a partial strategy, with updates performed as needed but no formal schedule.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9444,7 +9468,7 @@ const json_simple = {
                               {
                                   "text": "Updates are performed ad-hoc, with no formal strategy or documentation.",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9453,7 +9477,7 @@ const json_simple = {
                               {
                                   "text": "No, we do not have a strategy for continuous updates.",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": 3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9485,7 +9509,7 @@ const json_simple = {
                                   "text": "We conduct occasional reviews, but they are not consistently scheduled or documented.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9494,7 +9518,7 @@ const json_simple = {
                                   "text": "Reviews are performed only when issues arise, with no formal schedule or format.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9503,7 +9527,7 @@ const json_simple = {
                                   "text": "No, we do not conduct periodic reviews of ethical values or potential risks.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9534,28 +9558,28 @@ const json_simple = {
                                   "text": "We provide some information about risks, but it may not cover all potential issues.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Risks are mentioned informally, but no structured communication is in place.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "No, we do not inform end-users or subjects about risks.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -9577,28 +9601,28 @@ const json_simple = {
                                   "text": "We disclose AI involvement in some contexts, but not consistently across all interactions.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "non_maleficence": 1,
+                                  "autonomy": 1,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Disclosure is minimal or only provided upon request.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 2,
+                                  "explicability": 2
                               },
                               {
                                   "text": "No, we do not inform users that results are AI-generated.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 3,
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -9620,28 +9644,28 @@ const json_simple = {
                                   "text": "We monitor accuracy occasionally, but documentation is incomplete or inconsistent.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 1,
+                                  "explicability": 1
                               },
                               {
                                   "text": "Accuracy is checked informally, with no structured monitoring or documentation.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 2,
+                                  "explicability": 2
                               },
                               {
                                   "text": "No, we do not monitor or document the AI system's accuracy.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": 3,
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -9663,28 +9687,28 @@ const json_simple = {
                                   "text": "We provide some information about accuracy, but it may not be comprehensive or clear.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Accuracy expectations are mentioned informally, but no formal communication process exists.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "No, we do not communicate accuracy expectations to users.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -9705,8 +9729,8 @@ const json_simple = {
                               {
                                   "text": "We have considered these risks but have not fully implemented safeguards.",
                                   "value": "Item 6",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9714,8 +9738,8 @@ const json_simple = {
                               {
                                   "text": "These risks are acknowledged, but no formal analysis or mitigation is in place.",
                                   "value": "Item 7",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9723,8 +9747,8 @@ const json_simple = {
                               {
                                   "text": "No, we have not considered these risks.",
                                   "value": "Item 8",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 3,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9748,28 +9772,28 @@ const json_simple = {
                               {
                                   "text": "Moderate risk: Some safeguards exist, but there are gaps in monitoring or communication.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
                                   "text": "High risk: Limited safeguards and monitoring, with significant potential for accuracy drops.",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 2,
                                   "explicability": 0
                               },
                               {
                                   "text": "Very high risk: No safeguards or monitoring in place, accuracy drops are likely.",
                                   "value": "Item 4",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 3,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": 3,
                                   "explicability": 0
                               }
                           ]
@@ -9791,8 +9815,8 @@ const json_simple = {
                               {
                                   "text": "We have informal channels for reporting, but no formal process.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9800,8 +9824,8 @@ const json_simple = {
                               {
                                   "text": "Reporting is possible, but it is unclear how issues are addressed.",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9809,8 +9833,8 @@ const json_simple = {
                               {
                                   "text": "No, we do not have processes for third parties to report issues.",
                                   "value": "Item 4",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 3,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9834,8 +9858,8 @@ const json_simple = {
                               {
                                   "text": "We occasionally survey users, but not consistently or comprehensively.",
                                   "value": "Item 2",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 1,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9843,8 +9867,8 @@ const json_simple = {
                               {
                                   "text": "Surveys are conducted informally, with no structured approach.",
                                   "value": "Item 3",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 2,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9852,8 +9876,8 @@ const json_simple = {
                               {
                                   "text": "No, we do not survey users about their understanding of the system's decisions.",
                                   "value": "Item 4",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": 3,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9878,7 +9902,7 @@ const json_simple = {
                                   "text": "Feedback is considered, but revisions to risk management are infrequent or limited.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9887,7 +9911,7 @@ const json_simple = {
                                   "text": "Feedback is collected, but it rarely leads to revisions in risk management.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9896,7 +9920,7 @@ const json_simple = {
                                   "text": "No, feedback does not influence the risk management process.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9927,7 +9951,7 @@ const json_simple = {
                                   "text": "We have an informal process for challenging decisions, but it is not well-documented.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9936,7 +9960,7 @@ const json_simple = {
                                   "text": "Users can challenge decisions, but the process is unclear or inconsistent.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9945,7 +9969,7 @@ const json_simple = {
                                   "text": "No, there is no process for users to challenge decisions.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9969,16 +9993,16 @@ const json_simple = {
                           "type": "boolean",
                           "name": "question264",
                           "title": "Does the organisation have a specific person responsible for cyber security (CISO or equivalent role)?",
-                          "beneficenceTrue": 2,
-                          "non_maleficenceTrue": 3,
-                          "autonomyTrue": 2,
-                          "justiceTrue": 1,
-                          "explicabilityTrue": 2,
-                          "beneficenceFalse": 2,
-                          "non_maleficenceFalse": 3,
-                          "autonomyFalse": 2,
-                          "justiceFalse": 1,
-                          "explicabilityFalse": 2
+                          "beneficenceTrue": 0,
+                          "non_maleficenceTrue": -2,
+                          "autonomyTrue": 0,
+                          "justiceTrue": 0,
+                          "explicabilityTrue": 0,
+                          "beneficenceFalse": 0,
+                          "non_maleficenceFalse": 2,
+                          "autonomyFalse": 0,
+                          "justiceFalse": 0,
+                          "explicabilityFalse": 0
                       },
                       {
                           "type": "radiogroup",
@@ -9998,7 +10022,7 @@ const json_simple = {
                                   "text": "Moderately complex environment, such as when the deployment environment varies,unexpected situations the system must deal with gracefully may occur, but when they do, there is little risk to people, and it is clear how to effectively mitigate issues. For example, a natural language processing system used in a corporate workplace where language is professional and communication norms change slowly.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10007,7 +10031,7 @@ const json_simple = {
                                   "text": "Complex environment, such as when the deployment environment is dynamic, the system will be deployed in an open and unpredictable environment or may be subject to drifts in input distributions over time. There are many possible types of inputs, and inputs may significantly vary in quality. Time and attention may be at a premium in making decisions and it can be difficult to mitigate issues. For example, a natural language processing system used on a social media platform where language and communication norms change rapidly",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10032,7 +10056,7 @@ const json_simple = {
                                   "text": "Partially established, some monitoring but lacks formal processes",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10041,7 +10065,7 @@ const json_simple = {
                                   "text": "AI risks are handled by general cybersecurity teams, no specialized focus",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10050,7 +10074,7 @@ const json_simple = {
                                   "text": "No formal responsibility assigned for AI security",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10075,7 +10099,7 @@ const json_simple = {
                                   "text": "Occasionally (once per year or only when issues arise)",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10084,7 +10108,7 @@ const json_simple = {
                                   "text": "Informal assessments without structured methodology",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10093,7 +10117,7 @@ const json_simple = {
                                   "text": "No AI-specific risk assessment is conducted",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10118,7 +10142,7 @@ const json_simple = {
                                   "text": "Limited redundancy, with some fallback measures and manual intervention",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10127,7 +10151,7 @@ const json_simple = {
                                   "text": "Manual intervention only, no automated fallback in place",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10136,7 +10160,7 @@ const json_simple = {
                                   "text": "No fallback mechanisms, system fails without mitigation",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10161,7 +10185,7 @@ const json_simple = {
                                   "text": "Periodic evaluation, retraining when needed",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10170,7 +10194,7 @@ const json_simple = {
                                   "text": "Retraining only if major issues are detected",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10179,7 +10203,7 @@ const json_simple = {
                                   "text": "No process in place to detect or mitigate model drift",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10204,7 +10228,7 @@ const json_simple = {
                                   "text": "Some defences applied (e.g., input sanitization, noise filtering) but no adversarial testing",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10213,7 +10237,7 @@ const json_simple = {
                                   "text": "Basic security measures (e.g., authentication) but no AI-specific defences",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10222,7 +10246,7 @@ const json_simple = {
                                   "text": "No measures in place to address adversarial attacks",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10247,7 +10271,7 @@ const json_simple = {
                                   "text": "Basic privacy measures (e.g., limiting query access, access control)",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10256,7 +10280,7 @@ const json_simple = {
                                   "text": "No dedicated protection, but logs are monitored for anomalies",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10265,7 +10289,7 @@ const json_simple = {
                                   "text": "No protections against model inversion or membership inference",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10290,7 +10314,7 @@ const json_simple = {
                                   "text": "Some validation, but no automated anomaly detection",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10299,7 +10323,7 @@ const json_simple = {
                                   "text": "Basic checks, relies on data source integrity without verification",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10308,7 +10332,7 @@ const json_simple = {
                                   "text": "No data validation or checks against poisoning",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10333,7 +10357,7 @@ const json_simple = {
                                   "text": "Some version control, but limited access controls",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10342,7 +10366,7 @@ const json_simple = {
                                   "text": "Basic security, but no cryptographic integrity verification",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10351,7 +10375,7 @@ const json_simple = {
                                   "text": "No access control or integrity checks on training data",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10376,7 +10400,7 @@ const json_simple = {
                                   "text": "Manual reviews of logs, no automated anomaly detection",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10385,7 +10409,7 @@ const json_simple = {
                                   "text": "Logging in place, but no active review of user behavior",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10394,7 +10418,7 @@ const json_simple = {
                                   "text": "No monitoring for user misuse",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10419,7 +10443,7 @@ const json_simple = {
                                   "text": "Some filtering, but gaps in detecting emerging abuse patterns",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10428,7 +10452,7 @@ const json_simple = {
                                   "text": "Basic safeguards, relies on end-user agreements for responsible use",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10437,7 +10461,7 @@ const json_simple = {
                                   "text": "No safeguards beyond standard input validation",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10462,28 +10486,28 @@ const json_simple = {
                                   "text": "Logs stored securely, but analysis is manual and infrequent",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Logs exist but are not regularly reviewed or analyzed",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 2
                               },
                               {
                                   "text": "No structured logging or analysis in place",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 3
                               }
                           ]
                       },
@@ -10505,7 +10529,7 @@ const json_simple = {
                                   "text": "General cybersecurity response plan, but no AI-specific elements",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10514,7 +10538,7 @@ const json_simple = {
                                   "text": "Informal or ad-hoc response approach",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10523,7 +10547,7 @@ const json_simple = {
                                   "text": "No incident response plan for AI-related threats",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10548,7 +10572,7 @@ const json_simple = {
                                   "text": "Occasionally (yearly or irregularly) with some AI-specific testing",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10557,7 +10581,7 @@ const json_simple = {
                                   "text": "Only generic cybersecurity tests, no AI-specific red teaming",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10566,7 +10590,7 @@ const json_simple = {
                                   "text": "No red teaming or penetration testing for AI security",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10591,7 +10615,7 @@ const json_simple = {
                                   "text": "Internal security team with limited AI expertise",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10600,7 +10624,7 @@ const json_simple = {
                                   "text": "General IT security personnel with no AI-specific focus",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10609,7 +10633,7 @@ const json_simple = {
                                   "text": "No formal security testing on the AI system",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10634,7 +10658,7 @@ const json_simple = {
                                   "text": "Some redundancy, but with potential downtime risks",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10643,7 +10667,7 @@ const json_simple = {
                                   "text": "Manual recovery required in case of failure",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10652,7 +10676,7 @@ const json_simple = {
                                   "text": "No failover or redundancy measures",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10677,7 +10701,7 @@ const json_simple = {
                                   "text": "Some monitoring, but manual intervention is required for adjustments",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10686,7 +10710,7 @@ const json_simple = {
                                   "text": "Reactive approach, performance issues fixed after they occur",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10695,7 +10719,7 @@ const json_simple = {
                                   "text": "No active monitoring for performance degradation",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10720,7 +10744,7 @@ const json_simple = {
                                   "text": "Versioning is applied to models and data, but execution may have minor variations due to system dependencies",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10729,7 +10753,7 @@ const json_simple = {
                                   "text": "Basic versioning exists, but no guarantees on reproducibility across different environments",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10738,7 +10762,7 @@ const json_simple = {
                                   "text": "No formal measures to ensure reproducibility thus results may vary significantly between runs",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10770,8 +10794,8 @@ const json_simple = {
                       {
                           "text": "Partial risk assessment covering key risks but with gaps in ethical considerations",
                           "value": "Item 2",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 1,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10779,8 +10803,8 @@ const json_simple = {
                       {
                           "text": "Basic assessment focusing only on operational risks, with minimal ethical or technical analysis",
                           "value": "Item 3",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 2,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10788,8 +10812,8 @@ const json_simple = {
                       {
                           "text": "No formal risk assessment conducted",
                           "value": "Item 4",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 4,
+                          "non_maleficence": 4,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10813,7 +10837,7 @@ const json_simple = {
                       {
                           "text": "Stakeholders are partially involved, with limited consultations on specific aspects",
                           "value": "Item 2",
-                          "beneficence": 0,
+                          "beneficence": 1,
                           "non_maleficence": 0,
                           "autonomy": 0,
                           "justice": 0,
@@ -10822,7 +10846,7 @@ const json_simple = {
                       {
                           "text": "Stakeholders are minimally involved, with sporadic feedback gathering",
                           "value": "Item 3",
-                          "beneficence": 0,
+                          "beneficence": 2,
                           "non_maleficence": 0,
                           "autonomy": 0,
                           "justice": 0,
@@ -10831,7 +10855,7 @@ const json_simple = {
                       {
                           "text": "Stakeholders are not consulted or informed",
                           "value": "Item 4",
-                          "beneficence": 0,
+                          "beneficence": 3,
                           "non_maleficence": 0,
                           "autonomy": 0,
                           "justice": 0,
@@ -10857,7 +10881,7 @@ const json_simple = {
                           "text": "Personal data is deleted, but no verification or audit process is in place",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10866,7 +10890,7 @@ const json_simple = {
                           "text": "Personal data is archived indefinitely with no specific deletion plan",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10875,7 +10899,7 @@ const json_simple = {
                           "text": "No action is taken to ensure proper handling or deletion of personal data",
                           "value": "Item 4",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10900,7 +10924,7 @@ const json_simple = {
                           "text": "Models and data are archived, but security controls (e.g., encryption) are minimal",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10909,7 +10933,7 @@ const json_simple = {
                           "text": "Models and data are retained with no formal archiving or security plan",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10918,7 +10942,7 @@ const json_simple = {
                           "text": "Models and data are deleted without considering auditing or compliance needs",
                           "value": "Item 4",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10943,7 +10967,7 @@ const json_simple = {
                           "text": "Ethical impacts are partially assessed, with focus on high-risk areas but limited breadth",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10952,7 +10976,7 @@ const json_simple = {
                           "text": "Ethical risks are acknowledged but no concrete mitigation strategies are in place",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10961,7 +10985,7 @@ const json_simple = {
                           "text": "Ethical risks are not considered",
                           "value": "Item 4",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10985,8 +11009,8 @@ const json_simple = {
                       {
                           "text": "Partial transition plan with some gaps in continuity for dependent users",
                           "value": "Item 2",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 1,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10994,8 +11018,8 @@ const json_simple = {
                       {
                           "text": "Users are notified, but no specific alternative or support is provided",
                           "value": "Item 3",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 2,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11003,8 +11027,8 @@ const json_simple = {
                       {
                           "text": "No continuity or alternative services are provided",
                           "value": "Item 4",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 3,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11028,8 +11052,8 @@ const json_simple = {
                       {
                           "text": "Some recycling or energy minimization efforts are made, but no formal strategy exists",
                           "value": "Item 2",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 1,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11037,8 +11061,8 @@ const json_simple = {
                       {
                           "text": "Minimal effort to address environmental impact, with no formal measures taken",
                           "value": "Item 3",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 2,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11046,8 +11070,8 @@ const json_simple = {
                       {
                           "text": "Environmental impact is not considered",
                           "value": "Item 4",
-                          "beneficence": 0,
-                          "non_maleficence": 0,
+                          "beneficence": 3,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11072,28 +11096,28 @@ const json_simple = {
                           "text": "Partial documentation exists, but some steps are unclear or unavailable to stakeholders",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
-                          "explicability": 0
+                          "explicability": 1
                       },
                       {
                           "text": "Minimal documentation is available, and it is not shared externally",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
-                          "explicability": 0
+                          "explicability": 2
                       },
                       {
                           "text": "No documentation of the decommissioning process exists",
                           "value": "Item 4",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
-                          "explicability": 0
+                          "explicability": 3
                       }
                   ]
               },
@@ -11115,7 +11139,7 @@ const json_simple = {
                           "text": "Some third-party dependencies are reviewed, but gaps in termination plans exist",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11124,7 +11148,7 @@ const json_simple = {
                           "text": "No formal review of third-party dependencies, but termination is informally managed",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11133,7 +11157,7 @@ const json_simple = {
                           "text": "Third-party dependencies are ignored during decommissioning",
                           "value": "Item 4",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11158,7 +11182,7 @@ const json_simple = {
                           "text": "A basic review is conducted, but no formal audit or feedback loop exists",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11167,7 +11191,7 @@ const json_simple = {
                           "text": "Informal review conducted with no structured learning process",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 2,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11176,7 +11200,7 @@ const json_simple = {
                           "text": "No review or audit is conducted after decommissioning",
                           "value": "Item 4",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": 3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
