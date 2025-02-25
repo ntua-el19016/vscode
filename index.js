@@ -1064,12 +1064,12 @@ const savePdf = function(surveyData) {
 
 
 function SurveyComponent() {
-    const survey = new Survey.Model(json_simple);
+    const survey = new Survey.Model(json_questionnaire);
     const [surveyData, setSurveyData] = React.useState(null); // Set to null initially
     const [isSurveyCompleted, setIsSurveyCompleted] = React.useState(false); // Track survey completion
   
     survey.onComplete.add((sender, options) => {
-        const { beneficence, non_maleficence, autonomy, justice, explicability, totalScore, questionDetails } = calculateScore(sender.data, json_simple);
+        const { beneficence, non_maleficence, autonomy, justice, explicability, totalScore, questionDetails } = calculateScore(sender.data, json_questionnaire);
         setSurveyData({ beneficence, non_maleficence, autonomy, justice, explicability, totalScore, questionDetails }); // Set both total score and question details
         setIsSurveyCompleted(true); // Mark the survey as completed
     });

@@ -1,4 +1,4 @@
-const json_simple = {
+const json_questionnaire = {
   "title": "Algorithmic Impact Assessment",
   "logoPosition": "right",
   "pages": [
