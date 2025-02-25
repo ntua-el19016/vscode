@@ -388,6 +388,19 @@
     surveyPdf.save("survey_results.pdf");
 }; */
 
+
+const maxBeneficence = 147
+const minBeneficence = -43
+const maxNonMaleficence = 500
+const minNonMaleficence = -39
+const maxAutonomy = 42
+const minAutonomy = -25 
+const maxJustice = 121
+const minJustice = -56
+const maxExplicability = 97
+const minExplicability = -40 
+
+
 const calculateScore = function(surveyData, surveyJson) {
     let beneficence = 0;
     let non_maleficence = 0;
@@ -395,6 +408,7 @@ const calculateScore = function(surveyData, surveyJson) {
     let justice = 0;
     let explicability = 0;
     const questionDetails = [];  // To store question details for the PDF report
+
 
 
 
@@ -841,7 +855,7 @@ const calculateScore = function(surveyData, surveyJson) {
                     matrixWeight += rowWeight;
                 });
                 questionBeneficence = 0;
-                questionNonMaleficence = matrixWeight;
+                questionNonMaleficence = matrixWeight * 0.5;
                 questionAutonomy = 0;
                 questionJustice = 0;
                 questionExplicability = 0;
@@ -881,24 +895,32 @@ const calculateScore = function(surveyData, surveyJson) {
         console.log("-------------------------------");
     });
 
+
+
     return { beneficence, non_maleficence, autonomy, justice, explicability, totalScore: beneficence + non_maleficence + autonomy + justice + explicability, questionDetails };
 };
-
 
 
 const savePdf = function(surveyData) {
     const { jsPDF } = window.jspdf;
     const surveyPdf = new jsPDF();
-    surveyPdf.text("Survey Results", 20, 20);
-
-    let yPosition = 30;
+    const titleFontSize = 16;
+    const subtitleFontSize = 14;
+    const textFontSize = 12;
     const margin = 20;
     const lineHeight = 10;
     const maxYPosition = 250;
     const pageWidth = 180;
 
+    surveyPdf.setFontSize(titleFontSize);
+    surveyPdf.text("Survey Results", margin, 20);
+
+    let yPosition = 30;
+
     // Function to handle text wrapping and page breaks
-    const addWrappedText = (text) => {
+    const addWrappedText = (text, fontSize = textFontSize, color = 'black') => {
+        surveyPdf.setFontSize(fontSize);
+        surveyPdf.setTextColor(color);
         const lines = surveyPdf.splitTextToSize(text, pageWidth);
         lines.forEach(line => {
             if (yPosition + lineHeight > maxYPosition) {
@@ -910,89 +932,31 @@ const savePdf = function(surveyData) {
         });
     };
 
+    // Function to calculate percentage of total metric
+    const calculatePercentage = (score, min, max) => {
+        return ((score - min) / (max - min)) * 100;
+    }
+
     surveyData.questionDetails.forEach((question) => {
-
-
-
-       
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-
-        addWrappedText(`${question.name}: ${question.title}`, margin, yPosition);
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Type: ${question.type}`, margin, yPosition);
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-    
-        addWrappedText(`Beneficence: ${question.beneficence}`, margin, yPosition); // Use the updated score name
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Non-maleficence: ${question.non_maleficence}`, margin, yPosition); // Use the updated score name
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Autonomy: ${question.autonomy}`, margin, yPosition); // Use the updated score name
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Justice: ${question.justice}`, margin, yPosition); // Use the updated score name
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Explicability: ${question.explicability}`, margin, yPosition); // Use the updated score name
-        yPosition += lineHeight;
-
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-
+        addWrappedText(`${question.name}: ${question.title}`, subtitleFontSize, 'blue');
+        addWrappedText(`Type: ${question.type}`, textFontSize, 'gray');
+        addWrappedText(`Beneficence: ${question.beneficence}`, textFontSize, 'green');
+        addWrappedText(`Non-maleficence: ${question.non_maleficence}`, textFontSize, 'red');
+        addWrappedText(`Autonomy: ${question.autonomy}`, textFontSize, 'purple');
+        addWrappedText(`Justice: ${question.justice}`, textFontSize, 'orange');
+        addWrappedText(`Explicability: ${question.explicability}`, textFontSize, 'brown');
         if (Array.isArray(question.answer)) {
             question.answer.forEach((answer) => {
-                if (yPosition + lineHeight > maxYPosition) {
-                    surveyPdf.addPage();
-                    yPosition = 20;
-                }
-                addWrappedText(`Answer: ${answer}`, margin, yPosition);
-                yPosition += lineHeight;
+                addWrappedText(`Answer: ${answer}`, textFontSize, 'black');
             });
         } else {
-            if (yPosition + lineHeight > maxYPosition) {
-                surveyPdf.addPage();
-                yPosition = 20;
-            }
-            addWrappedText(`Answer: ${question.answer}`, margin, yPosition);
-            yPosition += lineHeight;
+            addWrappedText(`Answer: ${question.answer}`, textFontSize, 'black');
         }
 
-        yPosition += 2 * lineHeight;
+        yPosition += lineHeight;
     });
 
-    yPosition += 4 * lineHeight;
+    yPosition += 2 * lineHeight;
 
     // Total scores for the five new categories
     if (surveyData.beneficence !== undefined) {
@@ -1000,64 +964,39 @@ const savePdf = function(surveyData) {
             surveyPdf.addPage();
             yPosition = 20;
         }
-        addWrappedText(`Total Beneficence: ${surveyData.beneficence}`, margin, yPosition);
+        addWrappedText(`Total Beneficence: ${surveyData.beneficence} or ${calculatePercentage(surveyData.beneficence, minBeneficence, maxBeneficence)}%`, subtitleFontSize, 'green');
     } else {
-        addWrappedText("Total Beneficence: 0", margin, yPosition);
+        addWrappedText("Total Beneficence: 0", subtitleFontSize, 'green');
     }
 
-    yPosition += 2 * lineHeight;
     if (surveyData.non_maleficence !== undefined) {
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Total Non-maleficence: ${surveyData.non_maleficence}`, margin, yPosition);
+        addWrappedText(`Total Non-maleficence: ${surveyData.non_maleficence} or ${calculatePercentage(surveyData.non_maleficence, minNonMaleficence, maxNonMaleficence)}%`, subtitleFontSize, 'red');
     } else {
-        addWrappedText("Total Non-maleficence: 0", margin, yPosition);
+        addWrappedText("Total Non-maleficence: 0", subtitleFontSize, 'red');
     }
 
-    yPosition += 2 * lineHeight;
     if (surveyData.autonomy !== undefined) {
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Total Autonomy: ${surveyData.autonomy}`, margin, yPosition);
+        addWrappedText(`Total Autonomy: ${surveyData.autonomy} or ${calculatePercentage(surveyData.autonomy, minAutonomy, maxAutonomy)}%`, subtitleFontSize, 'purple');
     } else {
-        addWrappedText("Total Autonomy: 0", margin, yPosition);
+        addWrappedText("Total Autonomy: 0", subtitleFontSize, 'purple');
     }
 
-    yPosition += 2 * lineHeight;
     if (surveyData.justice !== undefined) {
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Total Justice: ${surveyData.justice}`, margin, yPosition);
+        addWrappedText(`Total Justice: ${surveyData.justice} or ${calculatePercentage(surveyData.justice, minJustice, maxJustice)}%`, subtitleFontSize, 'orange');
     } else {
-        addWrappedText("Total Justice: 0", margin, yPosition);
+        addWrappedText("Total Justice: 0", subtitleFontSize, 'orange');
     }
 
-    yPosition += 2 * lineHeight;
     if (surveyData.explicability !== undefined) {
-        if (yPosition + lineHeight > maxYPosition) {
-            surveyPdf.addPage();
-            yPosition = 20;
-        }
-        addWrappedText(`Total Explicability: ${surveyData.explicability}`, margin, yPosition);
+        addWrappedText(`Total Explicability: ${surveyData.explicability} or ${calculatePercentage(surveyData.explicability, minExplicability, maxExplicability)}%`, subtitleFontSize, 'brown');
     } else {
-        addWrappedText("Total Explicability: 0", margin, yPosition);
+        addWrappedText("Total Explicability: 0", subtitleFontSize, 'brown');
     }
 
     // The combined total score across all five categories
-    yPosition += 2 * lineHeight;
-
-    if (yPosition + lineHeight > maxYPosition) {
-        surveyPdf.addPage();
-        yPosition = 20;
-    }
+    yPosition += lineHeight;
     const totalScore = surveyData.beneficence + surveyData.non_maleficence + surveyData.autonomy + surveyData.justice + surveyData.explicability;
-    addWrappedText(`Total Score: ${totalScore}`, margin, yPosition);
+    addWrappedText(`Total Score: ${totalScore}`, titleFontSize, 'black');
 
     surveyPdf.save("survey_results.pdf");
 };
@@ -1089,63 +1028,18 @@ function SurveyComponent() {
         <SurveyReact.Survey model={survey} />
         
         {isSurveyCompleted && (
-          <div id="savePdfModal" style={modalStyle}>
-            <div style={modalContentStyle}>
-              <h3>Thank you for completing the survey!</h3>
-              <p>Would you like to save your results as a PDF?</p>
-              <button onClick={handleSavePdf} id="savePdfButton" style={savePdfButtonStyle}>Save as PDF</button>
-              <button onClick={handleCloseModal} style={closeButtonStyle}>Close</button>
-            </div>
+          <div id="savePdfModal">
+           <div className="modal-content">
+            <h3>Thank you for completing the survey!</h3>
+            <p>Would you like to save your results as a PDF?</p>
+            <button onClick={handleSavePdf} id="savePdfButton">Save as PDF</button>
+            <button onClick={handleCloseModal} className="closeButton">Close</button>
+           </div>
           </div>
         )}
       </>
     );
 }
-
-// Styles for the modal pop-up
-const modalStyle = {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    zIndex: 9999,
-};
-
-const modalContentStyle = {
-    backgroundColor: "white",
-    padding: "20px",
-    borderRadius: "5px",
-    textAlign: "center",
-    width: "300px",
-};
-
-// Style for the Save as PDF button
-const savePdfButtonStyle = {
-    backgroundColor: "#4CAF50", // Green
-    color: "white",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "5px",
-    cursor: "pointer",
-    marginBottom: "10px",
-};
-
-// Style for the Close button (red background)
-const closeButtonStyle = {
-    backgroundColor: "#f44336", // Red
-    color: "white",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "5px",
-    cursor: "pointer",
-};
-
-
 
 // Rendering the component
 const root = ReactDOM.createRoot(document.getElementById("surveyElement"));

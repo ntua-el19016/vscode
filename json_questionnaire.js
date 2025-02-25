@@ -5438,7 +5438,7 @@ const json_questionnaire = {
                                 "explicability": 0
                             }
                           ],
-                          "showOtherItem": true,
+                          "showOtherItem": true
                       },
                       {
                           "type": "radiogroup",
