@@ -5,7 +5,6 @@ const json_questionnaire = {
       {
           "name": "page1",
           "title": "General Info  ",
-          "description": "General the organisation responsible for the system",
           "elements": [
               {
                   "type": "panel",
@@ -18,7 +17,7 @@ const json_questionnaire = {
                           "title": "What kind of entity is your organisation?",
                           "choices": [
                               {
-                                  "text": "Provider: a natural or legal person, public authority, agency or other body that develops an AI system or a general purpose AI model (or that has an AI system or a general purpose AI model developed) and places them on the market or puts the system into service under its own name or trademark, whether for payment or free of charge;",
+                                  "text": "Provider: a natural or legal person, public authority, agency or other body that develops an AI system or a general purpose AI model (or that has an AI system or a general purpose AI model developed) and places them on the market or puts the system into service under its own name or trademark, whether for payment or free of charge.",
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -27,7 +26,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "Deployer: any natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity;",
+                                  "text": "Deployer: any natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.",
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -36,7 +35,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "Distributor: any natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market;",
+                                  "text": "Distributor: any natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.",
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -45,7 +44,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "Importer: any natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established outside the Union;",
+                                  "text": "Importer: any natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established outside the Union.",
                                   "value": "Item 4",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -76,7 +75,7 @@ const json_questionnaire = {
                       {
                           "type": "text",
                           "name": "question2",
-                          "title": "What's the name of your organisation?\n"
+                          "title": "What's the name of your organisation?"
                       },
                       {
                           "type": "comment",
@@ -91,20 +90,20 @@ const json_questionnaire = {
                       {
                           "type": "text",
                           "name": "question4",
-                          "title": "If your organisation has a mission statement, include it here : "
+                          "title": "If your organisation has a mission statement, include it here."
                       },
                       {
                           "type": "multipletext",
                           "name": "question5",
-                          "title": "Contact details of your organisation :  \n",
+                          "title": "Contact details of your organisation :",
                           "items": [
                               {
                                   "name": "text1",
-                                  "title": "email\n"
+                                  "title": "email"
                               },
                               {
                                   "name": "text2",
-                                  "title": "phone number\n"
+                                  "title": "phone number"
                               },
                               {
                                   "name": "text3",
@@ -112,7 +111,7 @@ const json_questionnaire = {
                               },
                               {
                                   "name": "text4",
-                                  "title": "zip code\n"
+                                  "title": "zip code"
                               },
                               {
                                   "name": "text5",
@@ -168,11 +167,11 @@ const json_questionnaire = {
                           "items": [
                               {
                                   "name": "text1",
-                                  "title": "Name\n"
+                                  "title": "Name"
                               },
                               {
                                   "name": "text2",
-                                  "title": "Job title\n"
+                                  "title": "Job title"
                               },
                               {
                                   "name": "text3",
@@ -188,10 +187,10 @@ const json_questionnaire = {
                           "type": "radiogroup",
                           "name": "question8",
                           "visibleIf": "{question6} = 'Item 1'",
-                          "title": "What's your relationship to the reviewed system : \n",
+                          "title": "What's your relationship to the reviewed system?",
                           "choices": [
                               {
-                                  "text": "I'm an independent reviewer not working in the organisation that made the system",
+                                  "text": "I'm an independent reviewer not working in the organisation that made the system.",
                                   "value": "Item 1",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -200,7 +199,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "I do not work on the system's development but I am a part of the organisation that made it",
+                                  "text": "I do not work on the system's development but I am a part of the organisation that made it.",
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -209,7 +208,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "I worked on the development of the system and I am a part of the organisation that made it",
+                                  "text": "I worked on the development of the system and I am a part of the organisation that made it.",
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -224,7 +223,7 @@ const json_questionnaire = {
                           "type": "multipletext",
                           "name": "question10",
                           "visibleIf": "{question6} = 'Item 2'",
-                          "title": "Contact details of the reviewers team : \n",
+                          "title": "Contact details of the reviewers team :",
                           "items": [
                               {
                                   "name": "text1",
@@ -252,7 +251,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "Did not work on the system's development but they are a part of the organisation that made it",
+                                  "text": "Did not work on the system's development but they are a part of the organisation that made it.",
                                   "value": "Item 2",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -261,7 +260,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "They worked on the system's development and are a part of the organisation that made it",
+                                  "text": "They worked on the system's development and are a part of the organisation that made it.",
                                   "value": "Item 3",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -275,7 +274,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question9",
-                          "title": "Describe how did you acquire the needed information for replying to all of the questions.\n"
+                          "title": "Describe how did you acquire the needed information for replying to all of the questions."
                       },
                       {
                           "type": "boolean",
@@ -296,12 +295,12 @@ const json_questionnaire = {
                           "type": "text",
                           "name": "question13",
                           "visibleIf": "{question12} = true",
-                          "title": "Give a link to the other assessments\n"
+                          "title": "Give a link to the other assessments."
                       },
                       {
                           "type": "comment",
                           "name": "question14",
-                          "title": " What are the potential limitations of the questionnaire? "
+                          "title": " What are the potential limitations of the questionnaire?"
                       },
                       {
                           "type": "boolean",
@@ -352,7 +351,7 @@ const json_questionnaire = {
                       {
                           "type": "text",
                           "name": "question15",
-                          "title": "What's the system's title/name?\n"
+                          "title": "What's the system's title/name?"
                       },
                       {
                           "type": "radiogroup",
@@ -409,7 +408,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question20",
-                          "title": "Does your system meet any of the following scope criteria ? \n",
+                          "title": "Does your system meet any of the following scope criteria ?",
                           "validators": [
                               {
                                   "type": "expression"
@@ -486,7 +485,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question24",
-                          "title": "Does your system fall within any of the following excluded categories?\n",
+                          "title": "Does your system fall within any of the following excluded categories?",
                           "choices": [
                               {
                                   "text": "AI systems developed and used exclusively for military purposes",
@@ -781,7 +780,7 @@ const json_questionnaire = {
                       {
                           "type": "boolean",
                           "name": "question25",
-                          "title": "Is your system a General Purpose AI model? \n",
+                          "title": "Is your system a General Purpose AI model?",
                           "beneficenceTrue": 0,
                           "non_maleficenceTrue": 0,
                           "autonomyTrue": 0,
@@ -828,7 +827,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "No. We are currently in the process of developing an AI strategy",
@@ -837,7 +836,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 2
+                                  "explicability": -1
                               },
                               {
                                   "text": "No. We have not yet started to develop an AI strategy",
@@ -846,7 +845,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 3
+                                  "explicability": 0
                               }
                           ]
                       },
@@ -864,29 +863,29 @@ const json_questionnaire = {
                               {
                                   "text": "There is clear leadership / ownership of our organization\u2019s AI strategy",
                                   "value": "Item 3",
-                                  "beneficence": 2,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
-                              },
-                              {
-                                  "text": "Hybrid system",
-                                  "value": "Item 5",
-                                  "beneficence": 1,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 1
-                              },
-                              {
-                                  "text": "Organic and decentralized",
-                                  "value": "Item 4",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 2
+                                  "explicability": -2
+                              },
+                              {
+                                  "text": "Hybrid system",
+                                  "value": "Item 5",
+                                  "beneficence": -1,
+                                  "non_maleficence": 0,
+                                  "autonomy": 0,
+                                  "justice": 0,
+                                  "explicability": -1
+                              },
+                              {
+                                  "text": "Organic and decentralized",
+                                  "value": "Item 4",
+                                  "beneficence": -2,
+                                  "non_maleficence": 0,
+                                  "autonomy": 0,
+                                  "justice": 0,
+                                  "explicability": 0
                               }
                           ]
                       },
@@ -898,7 +897,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, we have a process and clearly defined metrics",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -907,7 +906,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, we have a process but are still working on actual metrics",
                                   "value": "Item 5",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -916,7 +915,7 @@ const json_questionnaire = {
                               {
                                   "text": "No, we don\u2019t have a process or metrics, but we are likely to have this in the next 12 months",
                                   "value": "Item 6",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -925,7 +924,7 @@ const json_questionnaire = {
                               {
                                   "text": "No, we don\u2019t have a process of metrics and we are unlikely to have this in the next 12 months",
                                   "value": "Item 7",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -937,7 +936,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question42",
                           "visibleIf": "{question41} anyof ['Item 4', 'Item 5']",
-                          "title": "Describe that process \n"
+                          "title": "Describe that process."
                       },
                       {
                           "type": "radiogroup",
@@ -947,7 +946,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes . A short and long-term financial strategy is in place",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -956,7 +955,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes . Only a short-term financial strategy is in place",
                                   "value": "Item 5",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -965,7 +964,7 @@ const json_questionnaire = {
                               {
                                   "text": "No . But we are currently underway with developing a financial strategy",
                                   "value": "Item 6",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -974,7 +973,7 @@ const json_questionnaire = {
                               {
                                   "text": "No. We have no plans presently to develop a financial strategy",
                                   "value": "Item 7",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -986,7 +985,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question294",
                           "visibleIf": "{question43} anyof ['Item 4', 'Item 5']",
-                          "title": "Describe that strategy : "
+                          "title": "Describe that strategy."
                       },
                       {
                           "type": "radiogroup",
@@ -996,7 +995,7 @@ const json_questionnaire = {
                               {
                                   "text": "AI deployment is the highest priority for budget allocation, and we have been given an additional budget for it",
                                   "value": "Item 4",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1005,7 +1004,7 @@ const json_questionnaire = {
                               {
                                   "text": "AI deployment is given equal priority alongside other technological initiatives. We have some additional funding available",
                                   "value": "Item 5",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1014,7 +1013,7 @@ const json_questionnaire = {
                               {
                                   "text": "AI deployment is important, but we will have to cut spending across other technical initiatives to fund it",
                                   "value": "Item 6",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1023,7 +1022,7 @@ const json_questionnaire = {
                               {
                                   "text": "AI deployment is important, but depends on other technical initiatives to be in place first",
                                   "value": "Item 7",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1047,7 +1046,7 @@ const json_questionnaire = {
                                   "text": "Fully adaptable: can instantly accommodate any AI computational needs",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1056,7 +1055,7 @@ const json_questionnaire = {
                                   "text": "Highly scalable: designed with growth and future AI demands in mind",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1065,7 +1064,7 @@ const json_questionnaire = {
                                   "text": "Moderately scalable: can handle current projects but need enhancements for more complex applications",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1074,7 +1073,7 @@ const json_questionnaire = {
                                   "text": "Limited scalability: might need significant updates for large AI projects",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1099,7 +1098,7 @@ const json_questionnaire = {
                                   "text": "Robust GPU infrastructure available for current and future AI workloads",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1108,7 +1107,7 @@ const json_questionnaire = {
                                   "text": "Just enough GPU resources to cater to ongoing projects",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1117,7 +1116,7 @@ const json_questionnaire = {
                                   "text": "Limited GPU resources for experimental purposes only",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1126,7 +1125,7 @@ const json_questionnaire = {
                                   "text": "No, we don\u2019t have dedicated GPU resources available currently",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1142,7 +1141,7 @@ const json_questionnaire = {
                                   "text": "Our systems are mostly automated and efficiently allocate resources based on AI demand",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1151,7 +1150,7 @@ const json_questionnaire = {
                                   "text": "We have some automated resource allocation processes, but manual intervention is often required",
                                   "value": "Item 2",
                                   "beneficence": 1,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1160,7 +1159,7 @@ const json_questionnaire = {
                                   "text": "Resource allocation for AI tasks is done manually and might not be optimal",
                                   "value": "Item 3",
                                   "beneficence": 2,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1185,7 +1184,7 @@ const json_questionnaire = {
                                   "text": "Optimal: minimal issues and tailored for the most demanding AI workloads",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1194,7 +1193,7 @@ const json_questionnaire = {
                                   "text": "Moderately optimal: rare hiccups with current workload, but will need improvement to cater to future demand",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1203,7 +1202,7 @@ const json_questionnaire = {
                                   "text": "Sub optimal: we have occasional latency issues, especially with large AI workloads",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1212,7 +1211,7 @@ const json_questionnaire = {
                                   "text": "Not optimal: we experience frequent issues and bottlenecks",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1228,7 +1227,7 @@ const json_questionnaire = {
                                   "text": "Fully flexible and adaptable: can accommodate any scale of AI projects instantly",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1237,7 +1236,7 @@ const json_questionnaire = {
                                   "text": "Highly scalable: designed with significant AI growth in mind",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1246,7 +1245,7 @@ const json_questionnaire = {
                                   "text": "Adequately scalable: might need periodic updates",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1255,7 +1254,7 @@ const json_questionnaire = {
                                   "text": "Somewhat scalable: potential bottlenecks for very large AI projects",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1264,7 +1263,7 @@ const json_questionnaire = {
                                   "text": "Not scalable: significant upgrades are required for large AI projects",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 4,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1280,7 +1279,7 @@ const json_questionnaire = {
                                   "text": "High-level integration ensuring efficient data flow for most AI tasks, ensuring seamless operations across all AI projects",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1289,7 +1288,7 @@ const json_questionnaire = {
                                   "text": "Moderate integration: we've optimized major pathways but still have occasional hiccups",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1298,7 +1297,7 @@ const json_questionnaire = {
                                   "text": "Some basic integrations, but often require manual adjustments",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1307,7 +1306,7 @@ const json_questionnaire = {
                                   "text": "No integration: our network and AI systems operate mostly in silos",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1323,7 +1322,7 @@ const json_questionnaire = {
                                   "text": "High awareness: have a comprehensive understanding and / or regularly update our security protocols based on new threats",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1332,7 +1331,7 @@ const json_questionnaire = {
                                   "text": "Moderate awareness: aware and have taken preliminary precautions",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1341,7 +1340,7 @@ const json_questionnaire = {
                                   "text": "Limited awareness: have some basic understanding but no specific measures in place",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1350,7 +1349,7 @@ const json_questionnaire = {
                                   "text": "Unaware of security threats specific to AI workloads",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1366,7 +1365,7 @@ const json_questionnaire = {
                                   "text": "End-to-end encryption with regular checks and security audits, continuous monitoring and instant threat response",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1375,7 +1374,7 @@ const json_questionnaire = {
                                   "text": "Advanced encryption measures in place, but may lack regular audits",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1384,7 +1383,7 @@ const json_questionnaire = {
                                   "text": "Basic encryption measures in place",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1393,7 +1392,7 @@ const json_questionnaire = {
                                   "text": "No specific encryption or protection measures",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1409,7 +1408,7 @@ const json_questionnaire = {
                                   "text": "Fully equipped: have proactive monitoring and tamper detection with timely counter measures",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1418,7 +1417,7 @@ const json_questionnaire = {
                                   "text": "Moderately equipped: have protective measures in place but lack real-time monitoring",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1427,7 +1426,7 @@ const json_questionnaire = {
                                   "text": "Somewhat equipped: we are aware of the risks and have basics sorted but lack robust measures",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1436,7 +1435,7 @@ const json_questionnaire = {
                                   "text": "Not equipped: have not considered the cybersecurity aspect of AI workloads",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1452,7 +1451,7 @@ const json_questionnaire = {
                                   "text": "Dynamic and granular access controls that adjust based on project needs and security levels, with real-time monitoring",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1461,7 +1460,7 @@ const json_questionnaire = {
                                   "text": "Advanced role-based access controls with periodic audits",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1470,7 +1469,7 @@ const json_questionnaire = {
                                   "text": "Basic role-based access in place but may lack regular updates",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1479,7 +1478,7 @@ const json_questionnaire = {
                                   "text": "Access is largely open and not specifically restricted",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1494,7 +1493,7 @@ const json_questionnaire = {
                               {
                                   "text": "Highly prepared: we have dedicated infrastructure in place to optimize power consumption in AI deployment",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1503,7 +1502,7 @@ const json_questionnaire = {
                               {
                                   "text": "Somewhat prepared: some measures in place to address power consumption concerns in AI deployment",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1512,7 +1511,7 @@ const json_questionnaire = {
                               {
                                   "text": "Not prepared: no specific measures or considerations for power consumption in AI deployment",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1535,7 +1534,7 @@ const json_questionnaire = {
                               {
                                   "text": "Fully centralized: data is consistently managed and readily accessible organization\u2014wide",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1544,7 +1543,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderately centralized: majority of data is in unified databases, but some silos remain",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1553,7 +1552,7 @@ const json_questionnaire = {
                               {
                                   "text": "Partially fragmented: some centralized databases, but many department\u2014specific silos exist",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1562,7 +1561,7 @@ const json_questionnaire = {
                               {
                                   "text": "Highly fragmented: data is scattered across different silos",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1578,7 +1577,7 @@ const json_questionnaire = {
                               {
                                   "text": "Consistently pre-processed: our data strategy ensures data is always AI-ready",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1587,7 +1586,7 @@ const json_questionnaire = {
                               {
                                   "text": "Mostly pre-processed: most of our data is primed for AI use",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1596,7 +1595,7 @@ const json_questionnaire = {
                               {
                                   "text": "Occasionally pre-processed: some datasets are AI-ready, but many require additional work",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1605,7 +1604,7 @@ const json_questionnaire = {
                               {
                                   "text": "Rarely pre-processed: significant time is needed to clean and organize data for AI",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1621,8 +1620,8 @@ const json_questionnaire = {
                               {
                                   "text": "Facilitative: procedures actively promote efficient data access for AI",
                                   "value": "Item 1",
-                                  "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "beneficence": -3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1630,8 +1629,8 @@ const json_questionnaire = {
                               {
                                   "text": "Balanced: while there are protocols, they don't overly impede access",
                                   "value": "Item 2",
-                                  "beneficence": 1,
-                                  "non_maleficence": 2,
+                                  "beneficence": -2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1639,8 +1638,8 @@ const json_questionnaire = {
                               {
                                   "text": "Somewhat restrictive: procedures exist but are not streamlined so there can be occasional issues",
                                   "value": "Item 3",
-                                  "beneficence": 2,
-                                  "non_maleficence": 1,
+                                  "beneficence": -1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1648,8 +1647,8 @@ const json_questionnaire = {
                               {
                                   "text": "Restrictive: cumbersome protocols hinder timely access",
                                   "value": "Item 4",
-                                  "beneficence": 3,
-                                  "non_maleficence": 0,
+                                  "beneficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -1664,7 +1663,7 @@ const json_questionnaire = {
                               {
                                   "text": "Fully integrated: almost all tools have direct, automated interactions with data sources and operate in complete harmony",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1673,7 +1672,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderately integrated: most tools connect seamlessly with our main data sources",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1682,7 +1681,7 @@ const json_questionnaire = {
                               {
                                   "text": "Somewhat integrated: some tools interface directly with data sources, but many require manual bridging",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1691,7 +1690,7 @@ const json_questionnaire = {
                               {
                                   "text": "Not integrated: manual processes dominate tool\u2014data interactions",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1707,7 +1706,7 @@ const json_questionnaire = {
                               {
                                   "text": "Excellent: majority of our tools are AI-optimized and cater to advanced tasks",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1716,7 +1715,7 @@ const json_questionnaire = {
                               {
                                   "text": "Good: a balance of general-purpose and AI-specific analytics tools",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1725,7 +1724,7 @@ const json_questionnaire = {
                               {
                                   "text": "Fair: some tools are AI-enhanced, but there's significant reliance on general tools",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1734,7 +1733,7 @@ const json_questionnaire = {
                               {
                                   "text": "Basic: tools are more general-purpose and don't cater specifically to AI",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1750,7 +1749,7 @@ const json_questionnaire = {
                               {
                                   "text": "Highly adaptable: tools are frequently updated and scaled based on project demands and can be rapidly tailored to any AI analytics demand",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1759,7 +1758,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderately adaptable: tools cater to most AI projects, with occasional need for third-party solutions",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1768,7 +1767,7 @@ const json_questionnaire = {
                               {
                                   "text": "Somewhat adaptable: tools can handle current tasks but might struggle with larger, more complex projects",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1777,7 +1776,7 @@ const json_questionnaire = {
                               {
                                   "text": "Not adaptable: tools often lag behind project requirements",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1793,7 +1792,7 @@ const json_questionnaire = {
                               {
                                   "text": "Proficient: staff are adept at leveraging tool capabilities to their fullest",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1802,7 +1801,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderate: most staff can handle regular AI analytics tasks efficiently",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1811,7 +1810,7 @@ const json_questionnaire = {
                               {
                                   "text": "Intermediate: staff can use tools but often need guidance for advanced functions related to AI",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1820,7 +1819,7 @@ const json_questionnaire = {
                               {
                                   "text": "Beginner: significant training is required",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -1836,37 +1835,37 @@ const json_questionnaire = {
                               {
                                   "text": "Advanced: external data undergoes rigorous quality checks and peer reviews",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -3,
                                   "explicability": 0
                               },
                               {
                                   "text": "Intermediate: we have a systematic process for any external data we incorporate",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
                                   "text": "Basic: we do some manual checks",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 2,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
                                   "text": "We have no systematic processes",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 3,
+                                  "justice": 0,
                                   "explicability": 0
                               }
                           ]
@@ -1882,8 +1881,8 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": -3,
+                                  "explicability": -3
                               },
                               {
                                   "text": "We have a structured system for tracking data origins, but it's not integrated with all AI projects",
@@ -1891,8 +1890,8 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
-                                  "explicability": 1
+                                  "justice": -2,
+                                  "explicability": -2
                               },
                               {
                                   "text": "We have basic tracking but lack comprehensive lineage details",
@@ -1900,8 +1899,8 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 2,
-                                  "explicability": 2
+                                  "justice": -1,
+                                  "explicability": -1
                               },
                               {
                                   "text": "We do not actively track data origins",
@@ -1909,8 +1908,8 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 3,
-                                  "explicability": 3
+                                  "justice": 0,
+                                  "explicability": 0
                               }
                           ]
                       },
@@ -1925,7 +1924,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -3,
                                   "explicability": 0
                               },
                               {
@@ -1934,7 +1933,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -1943,7 +1942,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 2,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -1952,7 +1951,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 3,
+                                  "justice": 0,
                                   "explicability": 0
                               }
                           ]
@@ -1968,7 +1967,7 @@ const json_questionnaire = {
                           "type": "boolean",
                           "name": "question34",
                           "title": "Does your organisation have a defined set of values that should guide the development of AI systems",
-                          "beneficenceTrue": 0,
+                          "beneficenceTrue": -2,
                           "non_maleficenceTrue": 0,
                           "autonomyTrue": 0,
                           "justiceTrue": 0,
@@ -1990,7 +1989,7 @@ const json_questionnaire = {
                           "name": "question36",
                           "visibleIf": "{question34} = true",
                           "title": "Have those values been communicated externally ?",
-                          "beneficenceTrue": 0,
+                          "beneficenceTrue": -2,
                           "non_maleficenceTrue": 0,
                           "autonomyTrue": 0,
                           "justiceTrue": 0,
@@ -2012,7 +2011,7 @@ const json_questionnaire = {
                           "name": "question38",
                           "visibleIf": "{question34} = true",
                           "title": "Have these values been communicated internally ? ",
-                          "beneficenceTrue": 0,
+                          "beneficenceTrue": -2,
                           "non_maleficenceTrue": 0,
                           "autonomyTrue": 0,
                           "justiceTrue": 0,
@@ -2033,7 +2032,7 @@ const json_questionnaire = {
                           "type": "boolean",
                           "name": "question46",
                           "title": "Do you have an established AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices, including potential unclear grey areas ?",
-                          "beneficenceTrue": 0,
+                          "beneficenceTrue": -2,
                           "non_maleficenceTrue": 0,
                           "autonomyTrue": 0,
                           "justiceTrue": 0,
@@ -2055,7 +2054,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -2064,7 +2063,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": 0,
                                   "explicability": 0
                               },
                               {
@@ -2073,7 +2072,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 2,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -2082,7 +2081,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 3,
+                                  "justice": 2,
                                   "explicability": 0
                               }
                           ]
@@ -2098,7 +2097,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -2107,7 +2106,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": 0,
                                   "explicability": 0
                               },
                               {
@@ -2116,7 +2115,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 2,
+                                  "justice": 1,
                                   "explicability": 0
                               },
                               {
@@ -2125,7 +2124,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 3,
+                                  "justice": 2,
                                   "explicability": 0
                               }
                           ]
@@ -2141,7 +2140,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -2150,7 +2149,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": 0,
                                   "explicability": 0
                               },
                               {
@@ -2185,7 +2184,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "Moderately transparent: essential decision factors are known",
@@ -2194,7 +2193,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 1
+                                  "explicability": 0
                               },
                               {
                                   "text": "Limited transparency: some understanding but lacks depth",
@@ -2268,7 +2267,7 @@ const json_questionnaire = {
                                   "text": "High understanding: strict adherence with regular audits and review and a proactive strategy to stay ahead of global privacy norms and regulations",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2277,7 +2276,7 @@ const json_questionnaire = {
                                   "text": "Moderate understanding: have protocols in place, but occasional lapses occur",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2286,7 +2285,7 @@ const json_questionnaire = {
                                   "text": "Basic understanding, but no systematic adherence",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2295,7 +2294,7 @@ const json_questionnaire = {
                                   "text": "Unaware of global privacy standards",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2311,7 +2310,7 @@ const json_questionnaire = {
                                   "text": "Consistent anonymization techniques across all datasets",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2320,7 +2319,7 @@ const json_questionnaire = {
                                   "text": "Advanced anonymization techniques for most AI datasets",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2329,7 +2328,7 @@ const json_questionnaire = {
                                   "text": "Basic anonymization techniques applied inconsistently",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2338,7 +2337,7 @@ const json_questionnaire = {
                                   "text": "No anonymization: data is used as is",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2354,7 +2353,7 @@ const json_questionnaire = {
                                   "text": "Advanced protocol: regularly reviewed with mock drills and updates , continuous monitoring and rapid response teams",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2363,7 +2362,7 @@ const json_questionnaire = {
                                   "text": "Structured protocol with designated teams but rarely reviewed",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2372,7 +2371,7 @@ const json_questionnaire = {
                                   "text": "Basic protocol, but not comprehensive or tested",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2381,7 +2380,7 @@ const json_questionnaire = {
                                   "text": "No established protocol for breaches",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2397,7 +2396,7 @@ const json_questionnaire = {
                                   "text": "Detailed knowledge of varied jurisdictions with experts on board",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2406,7 +2405,7 @@ const json_questionnaire = {
                                   "text": "Good understanding of major regions/countries",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2415,7 +2414,7 @@ const json_questionnaire = {
                                   "text": "Basic awareness but lacks depth",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2424,7 +2423,7 @@ const json_questionnaire = {
                                   "text": "Not aware of data sovereignty laws",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2440,7 +2439,7 @@ const json_questionnaire = {
                                   "text": "Strict protocols with data mapped and stored according to local laws and sovereignty rules",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2449,7 +2448,7 @@ const json_questionnaire = {
                                   "text": "Advanced Protocols: regular checks to ensure compliance with major regions' sovereignty laws",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2458,7 +2457,7 @@ const json_questionnaire = {
                                   "text": "Basic protocols: some alignment with sovereignty laws, but not consistent",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2467,7 +2466,7 @@ const json_questionnaire = {
                                   "text": "No specific protocols: data is stored wherever convenient",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2483,7 +2482,7 @@ const json_questionnaire = {
                                   "text": "Rigorous checks ensuring every transfer aligns with local sovereignty laws",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2492,7 +2491,7 @@ const json_questionnaire = {
                                   "text": "Structured protocols for most cross\u2014border transfers",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2501,7 +2500,7 @@ const json_questionnaire = {
                                   "text": "Aware but might have occasional lapses in adherence",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2510,7 +2509,7 @@ const json_questionnaire = {
                                   "text": "We don't consider sovereignty during cross\u2014border transfers",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2526,7 +2525,7 @@ const json_questionnaire = {
                                   "text": "Highly comprehensive policies",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2535,7 +2534,7 @@ const json_questionnaire = {
                                   "text": "Moderately comprehensive",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2575,7 +2574,7 @@ const json_questionnaire = {
                               {
                                   "text": "Very well resourced",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2584,7 +2583,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderately well resourced",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2593,7 +2592,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderately under resourced",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2602,7 +2601,7 @@ const json_questionnaire = {
                               {
                                   "text": "Significantly under resourced",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2661,7 +2660,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, but we hire external vendors to train our staff",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2670,7 +2669,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, we have comprehensive internal training programs",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2679,7 +2678,7 @@ const json_questionnaire = {
                               {
                                   "text": "No, we have not implemented training programs yet but plan to in the future",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2788,7 +2787,7 @@ const json_questionnaire = {
                               {
                                   "text": "High receptiveness: widespread acceptance and willingness to adopt",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2797,7 +2796,7 @@ const json_questionnaire = {
                               {
                                   "text": "Moderate receptiveness: general acceptance and willingness to adopt",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2806,7 +2805,7 @@ const json_questionnaire = {
                               {
                                   "text": "Limited receptiveness: only limited teams / stakeholders accepting and willing to adopt",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2815,7 +2814,7 @@ const json_questionnaire = {
                               {
                                   "text": "Not receptive: resistant to change and will struggle to adapt",
                                   "value": "Item 4",
-                                  "beneficence": 3,
+                                  "beneficence": 2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -2906,15 +2905,6 @@ const json_questionnaire = {
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
-                              },
-                              {
-                                  "text": "Unsure: I don\u2019t know",
-                                  "value": "Item 5",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
                               }
                           ]
                       },
@@ -2965,8 +2955,8 @@ const json_questionnaire = {
                           "type": "boolean",
                           "name": "question67",
                           "title": "Do you have a change management plan in place to address the changes brought about by developing/deploying AI technologies?",
-                          "beneficenceTrue": 0,
-                          "non_maleficenceTrue": 0,
+                          "beneficenceTrue": -1,
+                          "non_maleficenceTrue": -1,
                           "autonomyTrue": 0,
                           "justiceTrue": 0,
                           "explicabilityTrue": 0,
@@ -2984,8 +2974,8 @@ const json_questionnaire = {
                               {
                                   "text": "Comprehensive: have thought through every aspect",
                                   "value": "Item 1",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": -1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -2993,8 +2983,8 @@ const json_questionnaire = {
                               {
                                   "text": "In progress: we have some areas fully covered; others are under review",
                                   "value": "Item 2",
-                                  "beneficence": 1,
-                                  "non_maleficence": 1,
+                                  "beneficence": 0,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3002,8 +2992,8 @@ const json_questionnaire = {
                               {
                                   "text": "Draft: just started developing",
                                   "value": "Item 3",
-                                  "beneficence": 2,
-                                  "non_maleficence": 2,
+                                  "beneficence": -1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -3026,22 +3016,22 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question30",
-                          "title": "Write a short description of the defined and documented objectives of the AI application ?"
+                          "title": "Write a short description of the defined and documented objectives of the AI application?"
                       },
                       {
                           "type": "comment",
                           "name": "question31",
-                          "title": "What client needs will the system address and how will this system meet them? "
+                          "title": "What client needs will the system address and how will this system meet them?"
                       },
                       {
                           "type": "checkbox",
                           "name": "question32",
-                          "title": "How were those client needs identified ?",
+                          "title": "How were those client needs identified?",
                           "choices": [
                               {
                                   "text": "Surveys among the appropriate demographics",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3050,7 +3040,7 @@ const json_questionnaire = {
                               {
                                   "text": "Market research for similar products",
                                   "value": "Item 2",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3059,39 +3049,31 @@ const json_questionnaire = {
                               {
                                   "text": "Consultation with professionals from different fields , public institutions or NGOs",
                                   "value": "Item 3",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
-                              },
-                              {
-                                "text": "None of the aforementioned things happen",
-                                "value": "Item 4",
-                                "beneficence": 3,
-                                "non_maleficence": 0,
-                                "autonomy": 0,
-                                "justice": 0,
-                                "explicability": 0
-                            }
+                              }
                           ],
-                          "showOtherItem": true
+                          "showOtherItem": true,
+                          "showNoneItem" : true
                       },
                       {
                           "type": "comment",
                           "name": "question33",
                           "visibleIf": "{question32} anyof ['Item 2', 'Item 1', 'Item 3', 'other']",
-                          "title": "How did that consultation happen and to what extent ? "
+                          "title": "How did that consultation happen and to what extent?"
                       },
                       {
                           "type": "comment",
                           "name": "question75",
-                          "title": "What problem is being solved ?\n"
+                          "title": "What problem is being solved?"
                       },
                       {
                           "type": "radiogroup",
                           "name": "question76",
-                          "title": "What area is being impacted by automation ?",
+                          "title": "What area is being impacted by automation?",
                           "choices": [
                               {
                                   "text": "Health related services",
@@ -3176,7 +3158,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question29",
-                          "title": "Who are the stakeholders who will be affected by this system? \n"
+                          "title": "Who are the stakeholders who will be affected by this system?"
                       },
                       {
                           "type": "comment",
@@ -3186,11 +3168,11 @@ const json_questionnaire = {
                       {
                           "type": "boolean",
                           "name": "question87",
-                          "title": "Did you consider a mechanism to include the participation of the widest range of possible stakeholders in the AI system's design and development ?",
+                          "title": "Did you consider a mechanism to include the participation of the widest range of possible stakeholders in the AI system's design and development?",
                           "beneficenceTrue": 0,
-                          "non_maleficenceTrue": 0,
+                          "non_maleficenceTrue": -1,
                           "autonomyTrue": 0,
-                          "justiceTrue": 0,
+                          "justiceTrue": -1,
                           "explicabilityTrue": 0,
                           "beneficenceFalse": 1,
                           "non_maleficenceFalse": 0,
@@ -3202,7 +3184,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question317",
                           "visibleIf": "{question87} = true",
-                          "title": "Describe that mechanism :"
+                          "title": "Describe that mechanism."
                       },
                       {
                           "type": "radiogroup",
@@ -3230,7 +3212,7 @@ const json_questionnaire = {
                               {
                                   "text": "Almost adequate",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": 1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3239,7 +3221,7 @@ const json_questionnaire = {
                               {
                                   "text": "Adequate",
                                   "value": "Item 4",
-                                  "beneficence": 1,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3248,7 +3230,7 @@ const json_questionnaire = {
                               {
                                   "text": "Fully adequate",
                                   "value": "Item 5",
-                                  "beneficence": 0,
+                                  "beneficence": -3,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -3941,7 +3923,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question94",
-                          "title": "The decision might cause physical harm on the persons involved in the following ways :",
+                          "title": "The decision might cause physical harm on the persons involved in the following ways:",
                           "choices": [
                               {
                                   "text": "Bodily injury",
@@ -3985,7 +3967,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question95",
-                          "title": "The decision might have a negative psychological impact on the persons involved in the following ways :",
+                          "title": "The decision might have a negative psychological impact on the persons involved in the following ways:",
                           "choices": [
                               {
                                   "text": "Addiction",
@@ -4092,7 +4074,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question92",
-                          "title": "The system might cause reputational harm to the persons involved in the following ways \n",
+                          "title": "The system might cause reputational harm to the persons involved in the following ways:",
                           "choices": [
                               {
                                   "text": "Defamation/libel/slander",
@@ -4180,7 +4162,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question97",
-                          "title": "The decision might have a negative impact on human rights and civil liberties in the following ways \n",
+                          "title": "The decision might have a negative impact on human rights and civil liberties in the following ways:",
                           "choices": [
                               {
                                   "text": "Benefits / entitlements loss",
@@ -4287,7 +4269,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question98",
-                          "title": "The decision might have a negative political economic impact in these ways :",
+                          "title": "The decision might have a negative political economic impact in these ways:",
                           "choices": [
                               {
                                   "text": "Critical infrastructure damage",
@@ -4358,7 +4340,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question99",
-                          "title": "The decision might have a negative environmental impact in these ways :",
+                          "title": "The decision might have a negative environmental impact in these ways:",
                           "choices": [
                               {
                                   "text": "Biodiversity loss",
@@ -4438,7 +4420,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question91",
-                          "title": "Does the system impact working conditions within the implementing authority? ",
+                          "title": "Does the system impact working conditions within the implementing authority?",
                           "choices": [
                               {
                                   "text": "The system create the risk of de-skilling your staff",
@@ -4482,7 +4464,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question100",
-                          "title": "How could this system be unintentionally or intentionally misused? "
+                          "title": "How could this system be unintentionally or intentionally misused?"
                       }
                   ]
               }
@@ -4591,7 +4573,7 @@ const json_questionnaire = {
                       {
                           "type": "text",
                           "name": "question117",
-                          "title": "Who was in charge of the data selection process?\n"
+                          "title": "Who was in charge of the data selection process?"
                       },
                       {
                           "type": "radiogroup",
@@ -4602,7 +4584,7 @@ const json_questionnaire = {
                                   "text": "All data is publicly available",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -4613,7 +4595,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -4622,7 +4604,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               }
                           ]
@@ -4675,17 +4657,26 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Yes, from mobile devices",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 1,
                                   "autonomy": 1,
                                   "justice": 0,
                                   "explicability": 0
-                              }
+                              },
+                              {
+                                "text": "Yes, from both",
+                                "value": "Item 3",
+                                "beneficence": 0,
+                                "non_maleficence": 1,
+                                "autonomy": 1,
+                                "justice": 0,
+                                "explicability": 1
+                            }
                           ],
                           "showOtherItem": true,
                           "showNoneItem": true,
@@ -4703,7 +4694,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": 1
                               },
                               {
                                   "text": "Yes, from sensors",
@@ -4712,8 +4703,17 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
-                              }
+                                  "explicability": 1
+                              },
+                              {
+                                "text": "Yes, from both",
+                                "value": "Item 3",
+                                "beneficence": 0,
+                                "non_maleficence": 0,
+                                "autonomy": 0,
+                                "justice": 0,
+                                "explicability": 1
+                            }
                           ],
                           "showNoneItem": true,
                           "noneText": "No"
@@ -4733,7 +4733,7 @@ const json_questionnaire = {
                       {
                           "type": "boolean",
                           "name": "question105",
-                          "title": "Is your system being trained, was it developed or is operated by using or processing personal data (including special categories of personal data)? \n",
+                          "title": "Is your system being trained, was it developed or is operated by using or processing personal data (including special categories of personal data)?",
                           "beneficenceTrue": 0,
                           "non_maleficenceTrue": 2,
                           "autonomyTrue": 2,
@@ -4911,7 +4911,16 @@ const json_questionnaire = {
                                   "autonomy": -1,
                                   "justice": 0,
                                   "explicability": 0
-                              }
+                              },
+                            {
+                                "text": "Federated learning/Secure aggregation",
+                                "value": "Item 4",
+                                "beneficence": 0,
+                                "non_maleficence": 0,
+                                "autonomy": -1,
+                                "justice": 0,
+                                "explicability": 0
+                            }
                           ],
                           "showOtherItem": true
                       },
@@ -5208,7 +5217,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question156",
-                          "title": "Describe how the legal compliance with respect to data protection has been assessed :"
+                          "title": "Describe how the legal compliance with respect to data protection has been assessed."
                       },
                       {
                           "type": "radiogroup",
@@ -5309,7 +5318,7 @@ const json_questionnaire = {
                                   "text": "Yes, and the annotation was done by trained professionals",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5338,13 +5347,13 @@ const json_questionnaire = {
                           "type": "radiogroup",
                           "name": "question124",
                           "visibleIf": "{question157} anyof ['Item 2', 'Item 1']",
-                          "title": "Is the quality of their work monitored?",
+                          "title": "Is/was the quality of their work monitored?",
                           "choices": [
                               {
                                   "text": "Yes, through regular quality checks",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -5398,7 +5407,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -5407,7 +5416,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -5416,7 +5425,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 2,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -5425,7 +5434,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 3,
+                                  "justice": -2,
                                   "explicability": 0
                               },
                               {
@@ -5571,7 +5580,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5580,7 +5589,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5639,7 +5648,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5673,7 +5682,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5707,7 +5716,7 @@ const json_questionnaire = {
                                   "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 0,
+                                  "justice": -1,
                                   "explicability": 0
                               },
                               {
@@ -5770,7 +5779,7 @@ const json_questionnaire = {
                       {
                           "type": "checkbox",
                           "name": "question122",
-                          "title": "Does the training data include data related to the particular characteristics of the individuals such as :",
+                          "title": "Does the training data include data related to the particular characteristics of the individuals such as:",
                           "choices": [
                               {
                                   "text": "sex",
@@ -6047,7 +6056,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question164",
-                          "title": "Describe in general, if possible in a non-technical manner, the technology/technologies you intend to use (This could include: (1) The date and the version of the system; (2) A description of hardware on which the system is intended to run; (3) Where the system is a component of products, photographs or illustrations showing external features, marking and internal layout of these products )"
+                          "title": "Describe in general, if possible in a non-technical manner, the technology/technologies you intend to use (This could include: (1) The date and the version of the system; (2) A description of hardware on which the system is intended to run; (3) Where the system is a component of products, photographs or illustrations showing external features, marking and internal layout of these products)"
                       },
                       {
                           "type": "comment",
@@ -6067,7 +6076,7 @@ const json_questionnaire = {
                           "non_maleficenceTrue": 0,
                           "autonomyTrue": 0,
                           "justiceTrue": 0,
-                          "explicabilityTrue": 2,
+                          "explicabilityTrue": -2,
                           "beneficenceFalse": 0,
                           "non_maleficenceFalse": 0,
                           "autonomyFalse": 0,
@@ -6110,7 +6119,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 1
+                                  "explicability": 3
                               },
                               {
                                   "text": "Machine Learning : Here we study how agents can improve their behavior through the diligent study of data and examples without explicit programming.",
@@ -6119,14 +6128,14 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 1
+                                  "explicability": 3
                               },
                               {
                                   "text": "Physical environment interaction method : Here we consider how an agent can make inferences and act on them in the unfiltered real world.",
                                   "value": "Item 5",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
-                                  "autonomy": 0,
+                                  "autonomy": 3,
                                   "justice": 0,
                                   "explicability": 0
                               }
@@ -6340,17 +6349,9 @@ const json_questionnaire = {
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
-                              },
-                              {
-                                  "text": "Other (please specify)",
-                                  "value": "Item 6",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
-                                  "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
                               }
-                          ]
+                            ],
+                              "showOtherItem": true
                       },
                       {
                           "type": "radiogroup",
@@ -6480,7 +6481,7 @@ const json_questionnaire = {
                                   "explicability": 0
                               },
                               {
-                                  "text": "Equality of odds: Requires that the true positive rate and false positive rate are the same for different groups. (isws pali to group fairness na einai pio geniko kai afta na einai ta pio eidika)",
+                                  "text": "Equality of odds: Requires that the true positive rate and false positive rate are the same for different groups.",
                                   "value": "Item 8",
                                   "beneficence": 0,
                                   "non_maleficence": 0,
@@ -6521,12 +6522,12 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question183",
-                          "title": "Explain why did you choose that type of fairness/fairness metric :\n"
+                          "title": "Explain why did you choose that type of fairness/fairness metric."
                       },
                       {
                           "type": "checkbox",
                           "name": "question184",
-                          "title": "Which of these tools have you used?\n",
+                          "title": "Which of these tools have you used?",
                           "choices": [
                               {
                                   "text": "Fairlearn : Open-source Python library developed by Microsoft. It provides tools for assessing and mitigating unfairness in machine learning models. Fairlearn offers both fairness metrics and algorithms for reducing different types of biases. It also includes visualization tools to help interpret fairness metrics and mitigation results.",
@@ -6666,7 +6667,7 @@ const json_questionnaire = {
               {
                   "type": "panel",
                   "name": "panel15",
-                  "title": "Explanability and Transparency \n",
+                  "title": "Explainability and Transparency",
                   "elements": [
                       {
                           "type": "radiogroup",
@@ -6729,7 +6730,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "Yes. It provides explanation only part of the stakeholders (either only the clients or only the bank)",
@@ -6738,7 +6739,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 2
+                                  "explicability": -1
                               },
                               {
                                   "text": "It doesn't provide any explanation",
@@ -6858,7 +6859,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               }
                           ]
                       },
@@ -7104,7 +7105,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question260",
                           "visibleIf": "{question259} anyof ['Item 2', 'Item 3']",
-                          "title": "Describe this practices :\n"
+                          "title": "Describe this practices :"
                       },
                       {
                           "type": "radiogroup",
@@ -7127,7 +7128,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 4
+                                  "explicability": 3
                               },
                               {
                                   "text": "Almost Adequate",
@@ -7136,7 +7137,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 3
+                                  "explicability": 1
                               },
                               {
                                   "text": "Adequate",
@@ -7145,7 +7146,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 2
+                                  "explicability": -1
                               },
                               {
                                   "text": "Fully Adequate",
@@ -7154,7 +7155,7 @@ const json_questionnaire = {
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -3
                               }
                           ]
                       }
@@ -7350,12 +7351,12 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question220",
-                          "title": "What are likely challenges/hurdles to achieving the best case scenario ?"
+                          "title": "What are likely challenges/hurdles to achieving the best case scenario?"
                       },
                       {
                           "type": "radiogroup",
                           "name": "question221",
-                          "title": "Did you establish an \"AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices including potential unclear grey areas? \n",
+                          "title": "Did you establish an AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices including potential unclear grey areas?",
                           "choices": [
                               {
                                   "text": "Yes, and it included people from both the humanities fields and people with technical knowledge about AI technologies",
@@ -7456,7 +7457,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question213",
-                          "title": "What measures have you taken to mitigate this risks ?  "
+                          "title": "What measures have you taken to mitigate this risks?"
                       },
                       {
                           "type": "radiogroup",
@@ -7476,7 +7477,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7485,7 +7486,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7494,7 +7495,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7503,7 +7504,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7600,7 +7601,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7609,7 +7610,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7618,7 +7619,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7627,7 +7628,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7732,7 +7733,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question214",
-                          "title": "What measures have you taken to mitigate this risks ?  "
+                          "title": "What measures have you taken to mitigate this risks?"
                       },
                       {
                           "type": "radiogroup",
@@ -7752,7 +7753,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7761,7 +7762,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7770,7 +7771,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7779,7 +7780,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7868,7 +7869,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7877,7 +7878,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7886,7 +7887,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7895,7 +7896,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -7984,7 +7985,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question217",
-                          "title": "What measures have you taken to mitigate this risks ?  "
+                          "title": "What measures have you taken to mitigate this risks?"
                       },
                       {
                           "type": "radiogroup",
@@ -8004,7 +8005,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8013,7 +8014,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8022,7 +8023,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8031,7 +8032,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8140,7 +8141,7 @@ const json_questionnaire = {
                       {
                           "type": "comment",
                           "name": "question218",
-                          "title": "What measures have you taken to mitigate this risks ?  "
+                          "title": "What measures have you taken to mitigate this risks?"
                       },
                       {
                           "type": "radiogroup",
@@ -8160,7 +8161,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8169,7 +8170,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8178,7 +8179,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8187,7 +8188,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8328,7 +8329,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8337,7 +8338,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8346,7 +8347,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8355,7 +8356,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8464,7 +8465,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8473,7 +8474,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8482,7 +8483,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8491,7 +8492,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8604,7 +8605,7 @@ const json_questionnaire = {
                                   "text": "Completely inadequate",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8613,7 +8614,7 @@ const json_questionnaire = {
                                   "text": "Almost Adequate",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8622,7 +8623,7 @@ const json_questionnaire = {
                                   "text": "Adequate",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8631,7 +8632,7 @@ const json_questionnaire = {
                                   "text": "Fully Adequate",
                                   "value": "Item 5",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8660,7 +8661,7 @@ const json_questionnaire = {
                                   "text": "Yes, the testing strategy is fully documented and includes detailed validation steps.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8669,7 +8670,7 @@ const json_questionnaire = {
                                   "text": "Yes, but the testing strategy is only partially documented.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8700,7 +8701,7 @@ const json_questionnaire = {
                                   "text": "Yes, the performance is fully documented with statistical metrics and analysis.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8709,7 +8710,7 @@ const json_questionnaire = {
                                   "text": "Yes, but the documentation is incomplete or lacks detailed statistical analysis.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8718,7 +8719,7 @@ const json_questionnaire = {
                                   "text": "No, we have not documented the model's performance in the testing environment.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 4,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8740,7 +8741,7 @@ const json_questionnaire = {
                                   "text": "Yes, the model has been thoroughly tested for extreme values and protected attributes.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8749,7 +8750,7 @@ const json_questionnaire = {
                                   "text": "Yes, but the testing was limited and did not cover all edge cases.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8758,7 +8759,7 @@ const json_questionnaire = {
                                   "text": "No, the model has not been tested for extreme values or protected attributes.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 4,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8780,7 +8781,7 @@ const json_questionnaire = {
                                   "text": "Yes, we have identified and documented all major failure patterns.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8789,7 +8790,7 @@ const json_questionnaire = {
                                   "text": "Yes, but only some failure patterns have been identified.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8798,7 +8799,7 @@ const json_questionnaire = {
                                   "text": "No, we have not identified any failure patterns.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 4,
+                                  "non_maleficence": 3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8826,7 +8827,7 @@ const json_questionnaire = {
                                   "text": "Yes, all key failure modes have been resolved or accounted for.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -8835,7 +8836,7 @@ const json_questionnaire = {
                                   "text": "Yes, but only some key failure modes have been addressed.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9030,7 +9031,7 @@ const json_questionnaire = {
                                   "text": "Yes, all risks have been resolved or accounted for.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9378,10 +9379,10 @@ const json_questionnaire = {
                           "type": "boolean",
                           "name": "question234",
                           "title": "Did you foresee any kind of external guidance or third party auditing processes to oversee ethical concerns and accountability measures ?",
-                          "beneficenceTrue": 1,
-                          "non_maleficenceTrue": 1,
-                          "autonomyTrue": 1,
-                          "justiceTrue": 1,
+                          "beneficenceTrue": -1,
+                          "non_maleficenceTrue": -1,
+                          "autonomyTrue": -1,
+                          "justiceTrue": -1,
                           "explicabilityTrue": 0,
                           "beneficenceFalse": 0,
                           "non_maleficenceFalse": 0,
@@ -9450,7 +9451,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, we have a fully documented and automated update strategy with regular intervals and version control.",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -2,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9459,7 +9460,7 @@ const json_questionnaire = {
                               {
                                   "text": "We have a partial strategy, with updates performed as needed but no formal schedule.",
                                   "value": "Item 2",
-                                  "beneficence": 1,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9468,7 +9469,7 @@ const json_questionnaire = {
                               {
                                   "text": "Updates are performed ad-hoc, with no formal strategy or documentation.",
                                   "value": "Item 3",
-                                  "beneficence": 2,
+                                  "beneficence": 0,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9489,7 +9490,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question238",
                           "visibleIf": "{question237} anyof ['Item 2', 'Item 3', 'Item 1']",
-                          "title": "If yes, describe it  (frequency of updates and documentation of model changes):"
+                          "title": "If yes, describe it  (frequency of updates and documentation of model changes)."
                       },
                       {
                           "type": "radiogroup",
@@ -9500,7 +9501,7 @@ const json_questionnaire = {
                                   "text": "Yes, we conduct regular reviews (e.g., quarterly) using structured methodologies and ethical frameworks.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9509,7 +9510,7 @@ const json_questionnaire = {
                                   "text": "We conduct occasional reviews, but they are not consistently scheduled or documented.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9518,7 +9519,7 @@ const json_questionnaire = {
                                   "text": "Reviews are performed only when issues arise, with no formal schedule or format.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9538,7 +9539,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question240",
                           "visibleIf": "{question239} anyof ['Item 1', 'Item 3', 'Item 2']",
-                          "title": "If yes describe it :"
+                          "title": "If yes describe it."
                       },
                       {
                           "type": "radiogroup",
@@ -9635,19 +9636,19 @@ const json_questionnaire = {
                                   "text": "Yes, we have a robust monitoring system with regular accuracy checks and detailed documentation.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
-                                  "justice": 0,
-                                  "explicability": 0
+                                  "justice": -2,
+                                  "explicability": -2
                               },
                               {
                                   "text": "We monitor accuracy occasionally, but documentation is incomplete or inconsistent.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
-                                  "justice": 1,
-                                  "explicability": 1
+                                  "justice": 0,
+                                  "explicability": 0
                               },
                               {
                                   "text": "Accuracy is checked informally, with no structured monitoring or documentation.",
@@ -9662,10 +9663,10 @@ const json_questionnaire = {
                                   "text": "No, we do not monitor or document the AI system's accuracy.",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
-                                  "justice": 3,
-                                  "explicability": 3
+                                  "justice": 4,
+                                  "explicability": 4
                               }
                           ]
                       },
@@ -9720,8 +9721,8 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, we have conducted thorough analysis and implemented safeguards to mitigate such risks.",
                                   "value": "Item 5",
-                                  "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "beneficence": -1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9806,7 +9807,7 @@ const json_questionnaire = {
                               {
                                   "text": "Yes, we have formal channels and processes for third parties to report issues.",
                                   "value": "Item 1",
-                                  "beneficence": 0,
+                                  "beneficence": -1,
                                   "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
@@ -9815,8 +9816,8 @@ const json_questionnaire = {
                               {
                                   "text": "We have informal channels for reporting, but no formal process.",
                                   "value": "Item 2",
-                                  "beneficence": 1,
-                                  "non_maleficence": 1,
+                                  "beneficence": 0,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9942,7 +9943,7 @@ const json_questionnaire = {
                                   "text": "Yes, we have a formal appeals process with clear steps for challenging decisions.",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9951,7 +9952,7 @@ const json_questionnaire = {
                                   "text": "We have an informal process for challenging decisions, but it is not well-documented.",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9960,7 +9961,7 @@ const json_questionnaire = {
                                   "text": "Users can challenge decisions, but the process is unclear or inconsistent.",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -9980,7 +9981,7 @@ const json_questionnaire = {
                           "type": "comment",
                           "name": "question255",
                           "visibleIf": "{question254} anyof ['Item 1', 'Item 2', 'Item 3']",
-                          "title": "If yes, describe it:"
+                          "title": "If yes, describe it."
                       }
                   ]
               },
@@ -10047,7 +10048,7 @@ const json_questionnaire = {
                                   "text": "Fully established, with documented processes and dedicated staff",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10056,7 +10057,7 @@ const json_questionnaire = {
                                   "text": "Partially established, some monitoring but lacks formal processes",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10065,7 +10066,7 @@ const json_questionnaire = {
                                   "text": "AI risks are handled by general cybersecurity teams, no specialized focus",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10090,7 +10091,7 @@ const json_questionnaire = {
                                   "text": "Regularly (quarterly or before major updates) using structured methodologies",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10099,7 +10100,7 @@ const json_questionnaire = {
                                   "text": "Occasionally (once per year or only when issues arise)",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10108,7 +10109,7 @@ const json_questionnaire = {
                                   "text": "Informal assessments without structured methodology",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10133,7 +10134,7 @@ const json_questionnaire = {
                                   "text": "Fully redundant fallback system, manual override, and alerting mechanisms",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10142,7 +10143,7 @@ const json_questionnaire = {
                                   "text": "Limited redundancy, with some fallback measures and manual intervention",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10151,7 +10152,7 @@ const json_questionnaire = {
                                   "text": "Manual intervention only, no automated fallback in place",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10176,7 +10177,7 @@ const json_questionnaire = {
                                   "text": "Continuous monitoring with automated retraining and human oversight",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10185,7 +10186,7 @@ const json_questionnaire = {
                                   "text": "Periodic evaluation, retraining when needed",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10194,7 +10195,7 @@ const json_questionnaire = {
                                   "text": "Retraining only if major issues are detected",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10219,7 +10220,7 @@ const json_questionnaire = {
                                   "text": "Robust adversarial defence techniques, continuous testing, and AI threat intelligence",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10228,7 +10229,7 @@ const json_questionnaire = {
                                   "text": "Some defences applied (e.g., input sanitization, noise filtering) but no adversarial testing",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10237,7 +10238,7 @@ const json_questionnaire = {
                                   "text": "Basic security measures (e.g., authentication) but no AI-specific defences",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10262,7 +10263,7 @@ const json_questionnaire = {
                                   "text": "Differential privacy, federated learning, and advanced protection measures",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10305,7 +10306,7 @@ const json_questionnaire = {
                                   "text": "Robust validation pipelines, anomaly detection, and data provenance tracking",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10348,7 +10349,7 @@ const json_questionnaire = {
                                   "text": "Version-controlled, cryptographically signed datasets with strict access controls",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10357,7 +10358,7 @@ const json_questionnaire = {
                                   "text": "Some version control, but limited access controls",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10391,7 +10392,7 @@ const json_questionnaire = {
                                   "text": "Automated behaviour analysis, anomaly detection, and alerting systems",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10400,7 +10401,7 @@ const json_questionnaire = {
                                   "text": "Manual reviews of logs, no automated anomaly detection",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10409,7 +10410,7 @@ const json_questionnaire = {
                                   "text": "Logging in place, but no active review of user behavior",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10434,7 +10435,7 @@ const json_questionnaire = {
                                   "text": "Strict filtering, context-aware moderation, and human review where necessary",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10443,7 +10444,7 @@ const json_questionnaire = {
                                   "text": "Some filtering, but gaps in detecting emerging abuse patterns",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10452,7 +10453,7 @@ const json_questionnaire = {
                                   "text": "Basic safeguards, relies on end-user agreements for responsible use",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10477,19 +10478,19 @@ const json_questionnaire = {
                                   "text": "Encrypted, tamper-proof logs with automated anomaly detection",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 0
+                                  "explicability": -2
                               },
                               {
                                   "text": "Logs stored securely, but analysis is manual and infrequent",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
-                                  "explicability": 1
+                                  "explicability": 0
                               },
                               {
                                   "text": "Logs exist but are not regularly reviewed or analyzed",
@@ -10520,7 +10521,7 @@ const json_questionnaire = {
                                   "text": "Predefined, tested incident response with AI-specific considerations",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10529,7 +10530,7 @@ const json_questionnaire = {
                                   "text": "General cybersecurity response plan, but no AI-specific elements",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10538,7 +10539,7 @@ const json_questionnaire = {
                                   "text": "Informal or ad-hoc response approach",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10563,7 +10564,7 @@ const json_questionnaire = {
                                   "text": "Regularly (quarterly or after major changes) with AI-specific attack simulations",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10572,7 +10573,7 @@ const json_questionnaire = {
                                   "text": "Occasionally (yearly or irregularly) with some AI-specific testing",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10581,7 +10582,7 @@ const json_questionnaire = {
                                   "text": "Only generic cybersecurity tests, no AI-specific red teaming",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10649,7 +10650,7 @@ const json_questionnaire = {
                                   "text": "Multi-region redundancy, automated failover, and contingency planning",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -2,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10676,7 +10677,7 @@ const json_questionnaire = {
                                   "text": "No failover or redundancy measures",
                                   "value": "Item 4",
                                   "beneficence": 0,
-                                  "non_maleficence": 3,
+                                  "non_maleficence": 4,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10692,7 +10693,7 @@ const json_questionnaire = {
                                   "text": "Continuous monitoring with adaptive resource scaling and retraining",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10701,7 +10702,7 @@ const json_questionnaire = {
                                   "text": "Some monitoring, but manual intervention is required for adjustments",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10710,7 +10711,7 @@ const json_questionnaire = {
                                   "text": "Reactive approach, performance issues fixed after they occur",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10735,7 +10736,7 @@ const json_questionnaire = {
                                   "text": "Full version control of data, model, and training code with environment replication and deterministic execution",
                                   "value": "Item 1",
                                   "beneficence": 0,
-                                  "non_maleficence": 0,
+                                  "non_maleficence": -3,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10744,7 +10745,7 @@ const json_questionnaire = {
                                   "text": "Versioning is applied to models and data, but execution may have minor variations due to system dependencies",
                                   "value": "Item 2",
                                   "beneficence": 0,
-                                  "non_maleficence": 1,
+                                  "non_maleficence": -1,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10753,7 +10754,7 @@ const json_questionnaire = {
                                   "text": "Basic versioning exists, but no guarantees on reproducibility across different environments",
                                   "value": "Item 3",
                                   "beneficence": 0,
-                                  "non_maleficence": 2,
+                                  "non_maleficence": 0,
                                   "autonomy": 0,
                                   "justice": 0,
                                   "explicability": 0
@@ -10958,7 +10959,7 @@ const json_questionnaire = {
                           "text": "Ethical impacts are fully assessed and mitigation plans are developed, including for marginalized groups",
                           "value": "Item 1",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": -3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -10967,7 +10968,7 @@ const json_questionnaire = {
                           "text": "Ethical impacts are partially assessed, with focus on high-risk areas but limited breadth",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 1,
+                          "non_maleficence": -1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11001,7 +11002,7 @@ const json_questionnaire = {
                           "text": "Comprehensive transition plan includes equivalent services or manual processes, with user support",
                           "value": "Item 1",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": -3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11009,8 +11010,8 @@ const json_questionnaire = {
                       {
                           "text": "Partial transition plan with some gaps in continuity for dependent users",
                           "value": "Item 2",
-                          "beneficence": 1,
-                          "non_maleficence": 1,
+                          "beneficence": -1,
+                          "non_maleficence": -1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11173,7 +11174,7 @@ const json_questionnaire = {
                           "text": "Comprehensive post-decommission review and audit conducted, with lessons learned applied to future projects",
                           "value": "Item 1",
                           "beneficence": 0,
-                          "non_maleficence": 0,
+                          "non_maleficence": -3,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11182,7 +11183,7 @@ const json_questionnaire = {
                           "text": "A basic review is conducted, but no formal audit or feedback loop exists",
                           "value": "Item 2",
                           "beneficence": 0,
-                          "non_maleficence": 1,
+                          "non_maleficence": -1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0
@@ -11191,7 +11192,7 @@ const json_questionnaire = {
                           "text": "Informal review conducted with no structured learning process",
                           "value": "Item 3",
                           "beneficence": 0,
-                          "non_maleficence": 2,
+                          "non_maleficence": 1,
                           "autonomy": 0,
                           "justice": 0,
                           "explicability": 0

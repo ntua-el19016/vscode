@@ -1,3 +1,4 @@
+//code for example questionnare with 2 weights and all question types 
 /*const calculateScore = function(surveyData, surveyJson) {
     let score1 = 0;
     let score2 = 0;
@@ -304,7 +305,6 @@
 
     return { score1, score2, totalScore: score1 + score2, questionDetails };
 }; */
-
 /* const savePdf = function(surveyData) {
     const { jsPDF } = window.jspdf;
     const surveyPdf = new jsPDF();
@@ -388,17 +388,30 @@
     surveyPdf.save("survey_results.pdf");
 }; */
 
+//maxmin for demo 
+// const maxBeneficence = 22
+// const minBeneficence = -26
+// const maxNonMaleficence = 134.5
+// const minNonMaleficence = -31
+// const maxAutonomy = 10
+// const minAutonomy = -10 
+// const maxJustice = 7
+// const minJustice = -13
+// const maxExplicability = 12
+// const minExplicability = -12 
 
-const maxBeneficence = 147
-const minBeneficence = -43
-const maxNonMaleficence = 500
-const minNonMaleficence = -39
-const maxAutonomy = 42
-const minAutonomy = -25 
-const maxJustice = 121
-const minJustice = -56
-const maxExplicability = 97
-const minExplicability = -40 
+
+//maxmin for actual questionnaire
+const maxBeneficence = 101
+const minBeneficence = -106
+const maxNonMaleficence = 459
+const minNonMaleficence = -199
+const maxAutonomy = 94
+const minAutonomy = -61 
+const maxJustice = 110
+const minJustice = -81
+const maxExplicability = 44
+const minExplicability = -26 
 
 
 const calculateScore = function(surveyData, surveyJson) {
